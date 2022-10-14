@@ -28,24 +28,24 @@ export default function Home() {
         >
           <h1 style={{ marginBottom: "4rem" }}>
             <AnimatedText>
-              Product Designer creating thoughtful, intuitive interfaces.
+              UI/UX. Full-Stack. Blockchain. Freelance.
             </AnimatedText>
           </h1>
 
           <motion.p variants={noStagger}>
             <AnimatedText>
-              I’m Dale-Anthony, a UK based product designer with over ten years
-              of experience. I specialise in interface design for mobile and
-              web-based applications with a focus on simplicity & usability.
+              I’m Harsh Pandey, an India based Full-Stack blockchain developer
+              with over two years of experience. I specialise in developing
+              responsive user interfaces for web-based applications with a focus
+              on secure and smooth user experience.
             </AnimatedText>
           </motion.p>
           <motion.p id={styles.desc} variants={noStagger}>
             <AnimatedText>
-              I’m currently working at WP Engine on some of the worlds best
-              WordPress products. Before that, I worked at BaseKit where I
-              helped shape the future of website builders and tools to help
-              small businesses thrive online. I also build tools like Design
-              Vault and Does.Design.
+              I’m currently working as freelancer at blocktrain.info where you
+              can find best resources to become excellent blockchain developer.
+              Before that, I worked at AppSecure where I designed and developed
+              Pentabug, a highly secure bug bounty platform.
             </AnimatedText>
           </motion.p>
 
