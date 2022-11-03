@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #212121;
+}
+
+.gradient {
+  height: 4px;
+  background: linear-gradient(
+    270deg,
+    #4c63b6 0%,
+    #bc72de 33.65%,
+    #cb4b73 62.81%,
+    #d75c16 100%
+  );
+}
+
+.navbar {
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.links li {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.links li:hover {
+  background-color: #242424;
+}
+
+.active {
+  background-color: #242424;
+}
