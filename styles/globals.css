@@ -10,8 +10,30 @@ html,
 body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
+  font-family: monospace;
   background-color: #111;
   color: white;
+}
+body {
+  overflow: overlay;
+}
+
+input,
+button {
+  font-family: monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a68;
+  border-radius: 10px;
 }
 
 a {
