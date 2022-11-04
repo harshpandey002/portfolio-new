@@ -39,7 +39,7 @@
 }
 
 .links li {
-  padding: 10px 18px;
+  padding: 8px 22px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -48,11 +48,11 @@
 }
 
 .links li:hover {
-  background-color: #242424;
+  background-color: #292929;
   color: white;
 }
 
 .active {
-  background-color: #242424;
+  background-color: #292929;
   color: white !important;
 }

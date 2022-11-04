@@ -10,7 +10,7 @@ export default function Header() {
           <h2>Harsh Pandey</h2>
         </div>
         <ul className={styles.links}>
-          <li className={styles.active}>Home</li>
+          <li className={styles.active}>../</li>
           <li>Blogs</li>
           <li>Projects</li>
         </ul>

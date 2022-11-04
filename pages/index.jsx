@@ -45,6 +45,8 @@ export default function Home() {
             <button id={styles.email}>Email me</button>
           </div>
         </div>
+
+        <hr id={styles.hr} />
       </div>
     </Layout>
   );
