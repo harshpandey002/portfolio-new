@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Layout from "../components/Layout";
 import styles from "@/styles/Home.module.css";
 import {
@@ -47,7 +48,34 @@ export default function Home() {
         </div>
 
         <hr id={styles.hr} />
+
+        <div className={styles.featured}>
+          <h2>Featured Projects</h2>
+          <p>A collection of some side projects that have shipped recently.</p>
+          <div className={styles.projects}>
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </div>
       </div>
     </Layout>
+  );
+}
+
+function ProjectCard() {
+  return (
+    <a href="#" className={styles.card}>
+      <span className={styles.img}>
+        <img src="project-Icon.png" alt="projectIcon" />
+      </span>
+      <span className={styles.info}>
+        <h5>Design Vault</h5>
+        <p>
+          A curated library of screenshots & interaction patterns from the world
+          {"'"}s best digital products. Gain insights, explore trends and
+          understand competitors and best practices.
+        </p>
+      </span>
+    </a>
   );
 }
