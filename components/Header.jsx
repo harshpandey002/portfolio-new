@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "@/styles/Header.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
+
+  const isActive = (path) => {
+    return path === router.asPath;
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.gradient} />
@@ -12,14 +19,16 @@ export default function Header() {
         </div>
         <ul className={styles.links}>
           <Link href="/">
-            <li className={styles.active}>Home</li>
+            <li className={isActive("/") ? styles.active : ""}>Home</li>
           </Link>
-          <li>Blogs</li>
+          <li className={isActive("/blog") ? styles.active : ""}>Blogs</li>
           <Link href="/projects">
-            <li>Projects</li>
+            <li className={isActive("/projects") ? styles.active : ""}>
+              Projects
+            </li>
           </Link>
           <Link href="/about">
-            <li>About</li>
+            <li className={isActive("/about") ? styles.active : ""}>About</li>
           </Link>
         </ul>
       </nav>
