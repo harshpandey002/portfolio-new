@@ -47,8 +47,44 @@ export default function about() {
             insights into my life on Twitter and Instagram.
           </p>
         </div>
+
         <hr id="hr" />
+
+        <div className={styles.work}>
+          <h3>Work</h3>
+          <div className={styles.table}>
+            <Work />
+            <Work />
+            <Work />
+            <Work />
+          </div>
+        </div>
+
+        <hr id="hr" />
+
+        <div className={styles.work}>
+          <h3>Support Me</h3>
+          <p id={styles.sponsor}>
+            I write articles on JavaScript, Python, Software Development, Web
+            3.0 and General Programming. If you enjoyed my articles or found
+            them useful, please consider supporting me by becoming a sponsor. It
+            will undoubtedly encourage me to continue writing article in the
+            future.
+          </p>
+        </div>
       </div>
     </Layout>
+  );
+}
+
+function Work() {
+  return (
+    <div className={styles.row}>
+      <p className={styles.org}>BlockTrain</p>
+      <span className={styles.details}>
+        <p>Full Stack Blockchain Developer</p>
+        <p>Aug 2022 - Dec 2022</p>
+      </span>
+    </div>
   );
 }
