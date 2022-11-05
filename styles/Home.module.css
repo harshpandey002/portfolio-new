@@ -2,6 +2,7 @@
   font-size: 60px;
   font-weight: 700;
   color: #dddddd;
+  margin-bottom: 4rem;
 }
 
 .hero p {
@@ -11,10 +12,6 @@
 }
 
 #desc {
-  margin-top: 4.5rem;
-}
-
-#desc + p {
   margin-top: 2rem;
 }
 
@@ -58,16 +55,6 @@
 
 #email:hover {
   background-color: #2c2c2c;
-}
-
-#hr {
-  margin-block: 5rem;
-  border: none;
-  background-image: url("../public/divider.svg");
-  background-position: left center;
-  background-repeat: repeat-x;
-  height: 6px;
-  opacity: 0.3;
 }
 
 .featured h2 {

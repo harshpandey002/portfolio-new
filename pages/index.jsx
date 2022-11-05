@@ -16,12 +16,12 @@ export default function Home() {
         <div className={styles.hero}>
           <h1>Product Designer creating thoughtful, intuitive interfaces.</h1>
 
-          <p id={styles.desc}>
+          <p>
             I{"’"}m Dale-Anthony, a UK based product designer with over ten
             years of experience. I specialise in interface design for mobile and
             web-based applications with a focus on simplicity & usability.
           </p>
-          <p>
+          <p id={styles.desc}>
             I{"’"}m currently working at WP Engine on some of the worlds best
             WordPress products. Before that, I worked at BaseKit where I helped
             shape the future of website builders and tools to help small
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
 
-        <hr id={styles.hr} />
+        <hr id="hr" />
 
         <div className={styles.featured}>
           <h2>Featured Projects</h2>
@@ -64,7 +64,7 @@ export default function Home() {
 
 function ProjectCard() {
   return (
-    <a href="#" className={styles.card}>
+    <a href="#" target="_blank" className={styles.card}>
       <span className={styles.img}>
         <img src="project-Icon.png" alt="projectIcon" />
       </span>

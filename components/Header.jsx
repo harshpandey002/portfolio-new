@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/Header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -10,9 +11,14 @@ export default function Header() {
           <h2>Harsh Pandey</h2>
         </div>
         <ul className={styles.links}>
-          <li className={styles.active}>../</li>
+          <Link href="/">
+            <li className={styles.active}>Home</li>
+          </Link>
           <li>Blogs</li>
-          <li>Projects</li>
+          <Link href="/projects">
+            <li>Projects</li>
+          </Link>
+          <li>About</li>
         </ul>
       </nav>
     </div>

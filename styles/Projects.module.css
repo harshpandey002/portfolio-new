@@ -1,0 +1,79 @@
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 2;
+  color: #a5a5a5;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 100%;
+  filter: brightness(0.8) contrast(1.2);
+  margin-bottom: 40px;
+}
+
+.info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info h4 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #eaeaea;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.desc p {
+  color: #b1b1b1;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.skills {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills span {
+  font-size: 16px;
+  color: #b1b1b1;
+}
+
+.info button {
+  border: 1px solid #363636;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+}
+
+.info button:hover {
+  background-color: #272727;
+}

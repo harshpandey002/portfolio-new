@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding-block: 4.5rem;
 }
+
+@media only screen and (max-width: 900px) {
+  .children {
+    padding: 2rem;
+  }
+}
