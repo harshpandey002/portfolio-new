@@ -1,0 +1,19 @@
+#me {
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 16px;
+  color: #b1b1b1;
+  line-height: 1.85;
+}
