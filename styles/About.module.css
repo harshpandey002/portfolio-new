@@ -69,6 +69,33 @@
   line-height: var(--line-height);
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  .work h3 {
+    font-weight: 700;
+  }
 
-} */
+  .table {
+    gap: 24px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .org {
+    font-weight: 700;
+  }
+
+  .details {
+    gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details p,
+  #sponsor {
+    color: #989898;
+  }
+}

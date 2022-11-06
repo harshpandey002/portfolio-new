@@ -6,7 +6,7 @@
 }
 
 .hero p {
-  font-size: 19px;
+  font-size: 18px;
   line-height: var(--line-height);
   color: #a5a5a5;
 }
@@ -123,6 +123,7 @@
   .hero h1 {
     font-size: 32px;
     line-height: 1.4;
+    margin-bottom: 2rem;
   }
 
   .hero p {
