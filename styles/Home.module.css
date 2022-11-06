@@ -22,7 +22,7 @@
   margin-top: 6rem;
 }
 
-.socials span {
+.socials span span {
   padding: 8px;
   border-radius: 6px;
   cursor: pointer;
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.socials span:hover {
+.socials span span:hover {
   background-color: #343434;
 }
 

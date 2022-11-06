@@ -7,33 +7,30 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 import { FaLinkedinIn } from "react-icons/fa";
 import ProjectCard from "@/components/ProjectCard";
 import AnimatedText from "@/components/AnimatedText";
 import { item, noStagger, stagger } from "helper/animate";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 export default function Home() {
-  const h1 = "Product Designer creating thoughtful, intuitive interfaces.";
-
   return (
     <Layout>
-      <motion.div
-        className={styles.container}
-        initial="hidden"
-        animate="visible"
-        variants={stagger}
-      >
-        <div className={styles.hero}>
+      <div className={styles.container}>
+        <motion.div
+          className={styles.hero}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={stagger}
+        >
           <h1>
-            {h1.split(" ").map((word, idx) => (
-              <span className="outerSpan" key={idx}>
-                <motion.span variants={item} className="innerSpan">
-                  {word + "\u00A0"}
-                </motion.span>
-              </span>
-            ))}
+            <AnimatedText>
+              Product Designer creating thoughtful, intuitive interfaces.
+            </AnimatedText>
           </h1>
 
           <motion.p variants={noStagger}>
@@ -53,23 +50,34 @@ export default function Home() {
             </AnimatedText>
           </motion.p>
 
-          <div className={styles.socials}>
-            <span>
-              <AiOutlineTwitter className={styles.icon} />
+          <motion.div variants={stagger} className={styles.socials}>
+            <span className="outerSpan">
+              <motion.span variants={item} className="innerSpan">
+                <AiOutlineTwitter className={styles.icon} />
+              </motion.span>
             </span>
-            <span>
-              <AiOutlineInstagram className={styles.icon} />
+            <span className="outerSpan">
+              <motion.span variants={item} className="innerSpan">
+                <AiOutlineInstagram className={styles.icon} />
+              </motion.span>
             </span>
-            <span>
-              <AiFillGithub className={styles.icon} />
+            <span className="outerSpan">
+              <motion.span variants={item} className="innerSpan">
+                <AiFillGithub className={styles.icon} />
+              </motion.span>
             </span>
-            <span>
-              <FaLinkedinIn className={styles.icon} />
+            <span className="outerSpan">
+              <motion.span variants={item} className="innerSpan">
+                <FaLinkedinIn className={styles.icon} />
+              </motion.span>
             </span>
-
-            <button id={styles.email}>Email me</button>
-          </div>
-        </div>
+            <span className="outerSpan">
+              <motion.button variants={item} id={styles.email}>
+                Email me
+              </motion.button>
+            </span>
+          </motion.div>
+        </motion.div>
 
         <hr id="hr" />
 
@@ -81,7 +89,7 @@ export default function Home() {
             <ProjectCard />
           </div>
         </div>
-      </motion.div>
+      </div>
     </Layout>
   );
 }
