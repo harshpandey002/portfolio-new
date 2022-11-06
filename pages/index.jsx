@@ -12,19 +12,18 @@ import { motion, useAnimation } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
 import ProjectCard from "@/components/ProjectCard";
 import AnimatedText from "@/components/AnimatedText";
-import { item, noStagger, stagger } from "helper/animate";
+import { hr, item, noStagger, stagger } from "helper/animate";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 export default function Home() {
   return (
     <Layout>
-      <div className={styles.container}>
+      <motion.div className={styles.container}>
         <motion.div
           className={styles.hero}
           initial="hidden"
           animate="visible"
-          exit="exit"
           variants={stagger}
         >
           <h1>
@@ -79,7 +78,7 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        <hr id="hr" />
+        <motion.hr variants={hr} id="hr" />
 
         <div className={styles.featured}>
           <h2>Featured Projects</h2>
@@ -89,7 +88,7 @@ export default function Home() {
             <ProjectCard />
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   );
 }
