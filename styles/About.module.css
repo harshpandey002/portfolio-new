@@ -70,6 +70,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  #me {
+    margin-top: 1rem;
+  }
+
   .work h3 {
     font-weight: 700;
   }

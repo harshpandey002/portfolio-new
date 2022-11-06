@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "@/styles/Header.module.css";
 import Link from "next/link";
@@ -14,11 +15,11 @@ export default function Header() {
     <div className={styles.container}>
       <div className={styles.gradient} />
       <nav className={styles.navbar}>
-        <Link href="/">
-          <div className={styles.logo}>
-            <h2>Harsh Pandey</h2>
-          </div>
-        </Link>
+        <div className={styles.logo}>
+          <Link href="/">
+            <img src="signature.png" alt="" />
+          </Link>
+        </div>
         <ul className={styles.links}>
           <Link href="/">
             <li className={isActive("/") ? styles.active : ""}>Home</li>
