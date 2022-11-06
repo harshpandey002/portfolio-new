@@ -51,13 +51,11 @@ function Project() {
         </div>
 
         <div className={styles.skills}>
-          {["React", "Nextjs", "Thirdweb", "Moralis", "Firebase"].map(
-            (skill, i) => (
-              <>
-                <span key={i + 1}>{skill}</span>
-              </>
-            )
-          )}
+          {["React", "Nextjs", "Thirdweb", "Moralis"].map((skill, i) => (
+            <>
+              <span key={i + 1}>{skill}</span>
+            </>
+          ))}
         </div>
 
         <button>

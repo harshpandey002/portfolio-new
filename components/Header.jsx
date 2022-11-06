@@ -14,9 +14,11 @@ export default function Header() {
     <div className={styles.container}>
       <div className={styles.gradient} />
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <h2>Harsh Pandey</h2>
-        </div>
+        <Link href="/">
+          <div className={styles.logo}>
+            <h2>Harsh Pandey</h2>
+          </div>
+        </Link>
         <ul className={styles.links}>
           <Link href="/">
             <li className={isActive("/") ? styles.active : ""}>Home</li>

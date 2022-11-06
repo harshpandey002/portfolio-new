@@ -6,8 +6,8 @@
 }
 
 .hero p {
-  font-size: 18px;
-  line-height: 2;
+  font-size: 19px;
+  line-height: var(--line-height);
   color: #a5a5a5;
 }
 
@@ -66,6 +66,7 @@
   color: #b1b1b1;
   font-size: 16px;
   margin-top: 16px;
+  line-height: var(--line-height);
 }
 
 .projects {
@@ -114,6 +115,33 @@
 .info p {
   font-size: 16px;
   color: #b1b1b1;
-  line-height: 2;
+  line-height: var(--line-height);
   margin-top: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    line-height: var(--line-height);
+  }
+
+  .socials {
+    flex-wrap: wrap;
+  }
+
+  #email {
+    margin-left: 0;
+  }
+
+  .featured h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
 }

@@ -7,7 +7,7 @@
 
 .hero p {
   font-size: 18px;
-  line-height: 2;
+  line-height: var(--line-height);
   color: #a5a5a5;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .info {
-  width: 80%;
+  width: var(--width);
   margin: 0 auto;
 }
 
@@ -46,18 +46,20 @@
 .desc p {
   color: #b1b1b1;
   font-size: 16px;
-  line-height: 1.85;
+  line-height: var(--line-height);
 }
 
 .skills {
   margin-bottom: 24px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
 .skills span {
   font-size: 16px;
+  font-weight: 800;
   color: #b1b1b1;
 }
 
@@ -76,4 +78,41 @@
 
 .info button:hover {
   background-color: #272727;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    color: #b1b1b1;
+  }
+
+  .card img {
+    margin-bottom: 28px;
+  }
+
+  .info h4 {
+    font-size: 22px;
+    font-weight: 800;
+    /* text-align: center; */
+  }
+
+  .desc p {
+    /* text-align: center; */
+  }
+
+  .skills {
+    gap: 16px;
+    /* justify-content: center; */
+  }
+
+  .skills span {
+    font-size: 14px;
+  }
+
+  .info button {
+    /* margin: 0 auto; */
+  }
 }
