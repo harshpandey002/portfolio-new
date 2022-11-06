@@ -1,0 +1,18 @@
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 2;
+  color: #a5a5a5;
+}
+
+.blogWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

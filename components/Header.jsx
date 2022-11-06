@@ -21,7 +21,9 @@ export default function Header() {
           <Link href="/">
             <li className={isActive("/") ? styles.active : ""}>Home</li>
           </Link>
-          <li className={isActive("/blog") ? styles.active : ""}>Blogs</li>
+          <Link href="/blogs">
+            <li className={isActive("/blogs") ? styles.active : ""}>Blogs</li>
+          </Link>
           <Link href="/projects">
             <li className={isActive("/projects") ? styles.active : ""}>
               Projects

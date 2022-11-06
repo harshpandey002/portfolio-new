@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 
 import { FaLinkedinIn } from "react-icons/fa";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -59,23 +60,5 @@ export default function Home() {
         </div>
       </div>
     </Layout>
-  );
-}
-
-function ProjectCard() {
-  return (
-    <a href="#" target="_blank" className={styles.card}>
-      <span className={styles.img}>
-        <img src="project-Icon.png" alt="projectIcon" />
-      </span>
-      <span className={styles.info}>
-        <h5>Design Vault</h5>
-        <p>
-          A curated library of screenshots & interaction patterns from the world
-          {"'"}s best digital products. Gain insights, explore trends and
-          understand competitors and best practices.
-        </p>
-      </span>
-    </a>
   );
 }
