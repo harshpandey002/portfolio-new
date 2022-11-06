@@ -56,6 +56,15 @@ a {
   opacity: 0.3;
 }
 
+.outerSpan {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.innerSpan {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 800px) {
   :root {
     --line-height: 1.75;
