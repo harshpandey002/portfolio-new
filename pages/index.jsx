@@ -1,20 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../components/Layout";
 import styles from "@/styles/Home.module.css";
 import {
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import Layout from "../components/Layout";
 
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
-import { FaLinkedinIn } from "react-icons/fa";
-import ProjectCard from "@/components/ProjectCard";
 import AnimatedText from "@/components/AnimatedText";
+import ProjectCard from "@/components/ProjectCard";
 import { hr, item, noStagger, stagger } from "helper/animate";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
   return (
