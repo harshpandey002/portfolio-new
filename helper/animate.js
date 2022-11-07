@@ -7,6 +7,10 @@ export const item = {
     y: 0,
     transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 1 },
   },
+  exit: {
+    y: "200%",
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.45 },
+  },
 };
 
 export const hr = {
@@ -21,6 +25,31 @@ export const hr = {
       duration: 2,
       delay: 1,
     },
+  },
+  exit: {
+    width: "0%",
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.35 },
+  },
+};
+
+export const cards = {
+  hidden: {
+    y: 300,
+    opacity: 0,
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.8, delay: 2 },
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.455, 0.03, 0.515, 0.955],
+      duration: 0.8,
+      delay: 2,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2 },
   },
 };
 

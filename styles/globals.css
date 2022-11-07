@@ -21,6 +21,7 @@ body {
 }
 body {
   overflow: overlay;
+  scroll-behaviour: smooth;
 }
 
 input,

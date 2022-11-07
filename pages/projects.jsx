@@ -4,7 +4,7 @@ import styles from "@/styles/Projects.module.css";
 import { BiLinkExternal } from "react-icons/bi";
 import { motion } from "framer-motion";
 import AnimatedText from "@/components/AnimatedText";
-import { hr, noStagger, stagger } from "helper/animate";
+import { cards, hr, noStagger, stagger } from "helper/animate";
 
 export default function Projects() {
   return (
@@ -13,6 +13,7 @@ export default function Projects() {
         className={styles.container}
         initial="hidden"
         animate="visible"
+        exit="exit"
         variants={stagger}
       >
         <div className={styles.hero}>
@@ -30,16 +31,19 @@ export default function Projects() {
           </motion.p>
         </div>
 
-        <motion.hr variants={hr} id="hr" />
+        <motion.hr
+          variants={hr}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          id="hr"
+        />
 
         <motion.div
-          initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            ease: [0.455, 0.03, 0.515, 0.955],
-            duration: 0.8,
-            delay: 2,
-          }}
+          variants={cards}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
           className={styles.projectWrapper}
         >
           <Project />

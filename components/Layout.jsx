@@ -1,14 +1,10 @@
-import React from "react";
 import styles from "@/styles/Layout.module.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Head from "next/head";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Head from "next/head";
+import Footer from "./Footer";
+import Header from "./Header";
 
 export default function Layout({ title, description, children }) {
-  const router = useRouter();
-
   return (
     <motion.div>
       <Head>
@@ -18,15 +14,7 @@ export default function Layout({ title, description, children }) {
       </Head>
 
       <Header />
-      <motion.div
-        key={router.asPath}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className={styles.children}
-      >
-        {children}
-      </motion.div>
+      <div className={styles.children}>{children}</div>
       <Footer />
     </motion.div>
   );

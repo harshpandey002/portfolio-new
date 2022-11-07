@@ -15,23 +15,23 @@ export default function Header() {
       <div className={styles.gradient} />
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/" scroll={false}>
             <img src="signature.png" alt="" />
           </Link>
         </div>
         <ul className={styles.links}>
-          <Link href="/">
+          <Link href="/" scroll={false}>
             <li className={isActive("/") ? styles.active : ""}>Home</li>
           </Link>
-          <Link href="/blogs">
+          <Link href="/blogs" scroll={false}>
             <li className={isActive("/blogs") ? styles.active : ""}>Blogs</li>
           </Link>
-          <Link href="/projects">
+          <Link href="/projects" scroll={false}>
             <li className={isActive("/projects") ? styles.active : ""}>
               Projects
             </li>
           </Link>
-          <Link href="/about">
+          <Link href="/about" scroll={false}>
             <li className={isActive("/about") ? styles.active : ""}>About</li>
           </Link>
         </ul>
