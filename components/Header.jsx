@@ -11,31 +11,33 @@ export default function Header() {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.gradient} />
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href="/" scroll={false}>
-            <img src="signature.png" alt="" />
-          </Link>
-        </div>
-        <ul className={styles.links}>
-          <Link href="/" scroll={false}>
-            <li className={isActive("/") ? styles.active : ""}>Home</li>
-          </Link>
-          <Link href="/blogs" scroll={false}>
-            <li className={isActive("/blogs") ? styles.active : ""}>Blogs</li>
-          </Link>
-          <Link href="/projects" scroll={false}>
-            <li className={isActive("/projects") ? styles.active : ""}>
-              Projects
-            </li>
-          </Link>
-          <Link href="/about" scroll={false}>
-            <li className={isActive("/about") ? styles.active : ""}>About</li>
-          </Link>
-        </ul>
-      </nav>
-    </div>
+      <div className={styles.container}>
+        <nav className={styles.navbar}>
+          <div className={styles.logo}>
+            <Link href="/" scroll={false}>
+              <img src="signature.png" alt="" />
+            </Link>
+          </div>
+          <ul className={styles.links}>
+            <Link href="/" scroll={false}>
+              <li className={isActive("/") ? styles.active : ""}>Home</li>
+            </Link>
+            <Link href="/blogs" scroll={false}>
+              <li className={isActive("/blogs") ? styles.active : ""}>Blogs</li>
+            </Link>
+            <Link href="/projects" scroll={false}>
+              <li className={isActive("/projects") ? styles.active : ""}>
+                Projects
+              </li>
+            </Link>
+            <Link href="/about" scroll={false}>
+              <li className={isActive("/about") ? styles.active : ""}>About</li>
+            </Link>
+          </ul>
+        </nav>
+      </div>
+    </>
   );
 }

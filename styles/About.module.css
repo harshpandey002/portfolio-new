@@ -1,7 +1,12 @@
 #me {
-  border-radius: 8px;
   width: 100%;
   margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#me img {
+  width: 100%;
   filter: brightness(0.8) contrast(1.2);
 }
 
