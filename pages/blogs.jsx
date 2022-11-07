@@ -9,14 +9,14 @@ import { cards, hr, noStagger, stagger } from "helper/animate";
 export default function Blogs() {
   return (
     <Layout>
-      <motion.div
-        className={styles.container}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={stagger}
-      >
-        <div className={styles.hero}>
+      <div className={styles.container}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={stagger}
+          className={styles.hero}
+        >
           <h1>
             <AnimatedText>Blogs</AnimatedText>
           </h1>
@@ -30,7 +30,7 @@ export default function Blogs() {
               the future.
             </AnimatedText>
           </motion.p>
-        </div>
+        </motion.div>
 
         <motion.hr
           variants={hr}
@@ -54,7 +54,7 @@ export default function Blogs() {
           <ProjectCard />
           <ProjectCard />
         </motion.div>
-      </motion.div>
+      </div>
     </Layout>
   );
 }

@@ -51,7 +51,7 @@ a {
 #hr {
   margin-block: 5rem;
   border: none;
-  background-image: url("../public/divider.svg");
+  background-image: url("/divider.svg");
   background-position: left center;
   background-repeat: repeat-x;
   height: 6px;
