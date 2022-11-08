@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
-import { hr, item, noStagger, stagger } from "helper/animate";
+import { fadeIn, hr, item, noStagger, stagger } from "helper/animate";
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
@@ -86,7 +86,13 @@ export default function Home() {
           id="hr"
         />
 
-        <motion.div exit={{ opacity: 0 }} className={styles.featured}>
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className={styles.featured}
+        >
           <h2>Featured Projects</h2>
           <p>A collection of some side projects that have shipped recently.</p>
           <div className={styles.projects}>

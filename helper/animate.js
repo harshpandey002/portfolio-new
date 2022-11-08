@@ -36,7 +36,11 @@ export const cards = {
   hidden: {
     y: 300,
     opacity: 0,
-    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.8, delay: 2 },
+    transition: {
+      ease: [0.455, 0.03, 0.515, 0.955],
+      duration: 0.8,
+      delay: 2,
+    },
   },
   visible: {
     y: 0,
@@ -49,25 +53,32 @@ export const cards = {
   },
   exit: {
     opacity: 0,
-    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2 },
+    y: 100,
+    transition: {
+      ease: [0.455, 0.03, 0.515, 0.955],
+      duration: 0.2,
+    },
   },
 };
 
 export const fadeIn = {
   hidden: {
     opacity: 0,
-    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.8, delay: 2 },
+    x: 50,
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2, delay: 2 },
   },
   visible: {
     opacity: 1,
+    x: 0,
     transition: {
       ease: [0.455, 0.03, 0.515, 0.955],
-      duration: 0.8,
+      duration: 0.4,
       delay: 2,
     },
   },
   exit: {
     opacity: 0,
+    x: -50,
     transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2 },
   },
 };
