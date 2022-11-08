@@ -13,22 +13,20 @@ import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
 import { hr, item, noStagger, stagger } from "helper/animate";
 import { FaLinkedinIn } from "react-icons/fa";
-import { useRouter } from "next/router";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <Layout>
-      <div className={styles.container}>
+      <div className={styles.homeContainer}>
         <motion.div
+          key="home"
           className={styles.hero}
           initial="hidden"
           animate="visible"
           exit="exit"
           variants={stagger}
         >
-          <h1>
+          <h1 style={{ marginBottom: "4rem" }}>
             <AnimatedText>
               Product Designer creating thoughtful, intuitive interfaces.
             </AnimatedText>
@@ -88,11 +86,7 @@ export default function Home() {
           id="hr"
         />
 
-        <motion.div
-          exit={{ opacity: 0 }}
-          key={router.route}
-          className={styles.featured}
-        >
+        <motion.div exit={{ opacity: 0 }} className={styles.featured}>
           <h2>Featured Projects</h2>
           <p>A collection of some side projects that have shipped recently.</p>
           <div className={styles.projects}>

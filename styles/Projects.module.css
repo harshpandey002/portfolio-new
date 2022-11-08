@@ -17,7 +17,7 @@
   gap: 6rem;
 }
 
-.card img {
+.projectCard img {
   border-radius: 8px;
   width: 100%;
   filter: brightness(0.8) contrast(1.2);
@@ -36,14 +36,14 @@
   color: #eaeaea;
 }
 
-.desc {
+.projectDesc {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 16px;
 }
 
-.desc p {
+.projectDesc p {
   color: #b1b1b1;
   font-size: 16px;
   line-height: var(--line-height);
@@ -91,30 +91,20 @@
     color: #b1b1b1;
   }
 
-  .card img {
+  .projectCard img {
     margin-bottom: 28px;
   }
 
   .info h4 {
     font-size: 22px;
     font-weight: 800;
-    /* text-align: center; */
-  }
-
-  .desc p {
-    /* text-align: center; */
   }
 
   .skills {
     gap: 16px;
-    /* justify-content: center; */
   }
 
   .skills span {
     font-size: 14px;
-  }
-
-  .info button {
-    /* margin: 0 auto; */
   }
 }

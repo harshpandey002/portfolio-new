@@ -1,14 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import styles from "@/styles/About.module.css";
+import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
-import { cards, fadeIn, hr, image, noStagger, stagger } from "helper/animate";
+import { fadeIn, hr, image, noStagger, stagger } from "helper/animate";
 
-export default function about() {
+export default function About() {
   return (
     <Layout>
       <motion.div
+        key="about"
         initial="hidden"
         animate="visible"
         exit="exit"

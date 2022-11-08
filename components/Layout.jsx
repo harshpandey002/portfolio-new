@@ -1,7 +1,6 @@
 import styles from "@/styles/Layout.module.css";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout({ title, description, children }) {
@@ -15,7 +14,6 @@ export default function Layout({ title, description, children }) {
 
       <Header />
       <div className={styles.children}>{children}</div>
-      <Footer />
     </motion.div>
   );
 }

@@ -1,16 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "@/components/Layout";
-import styles from "@/styles/Projects.module.css";
-import { BiLinkExternal } from "react-icons/bi";
-import { motion } from "framer-motion";
 import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
+import styles from "@/styles/Home.module.css";
+import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function Projects() {
   return (
     <Layout>
       <div className={styles.container}>
         <motion.div
+          key="projects"
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -59,12 +60,12 @@ export default function Projects() {
 
 function Project() {
   return (
-    <div className={styles.card}>
+    <div className={styles.projectCard}>
       <img src="designvault.png" alt="Project Image" />
       <div className={styles.info}>
         <h4>Go Connect: Bookings</h4>
 
-        <div className={styles.desc}>
+        <div className={styles.projectDesc}>
           <p>
             An online booking system for in-person or online appointments,
             designed to work standalone or alongside BaseKit Sitebuilder.

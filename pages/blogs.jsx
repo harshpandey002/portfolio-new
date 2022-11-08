@@ -1,8 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import ProjectCard from "@/components/ProjectCard";
-import styles from "@/styles/Blogs.module.css";
-import React from "react";
+import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
 
@@ -11,6 +10,7 @@ export default function Blogs() {
     <Layout>
       <div className={styles.container}>
         <motion.div
+          key="blogs"
           initial="hidden"
           animate="visible"
           exit="exit"
