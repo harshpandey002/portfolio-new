@@ -1,3 +1,5 @@
+/*? index.jsx */
+
 .hero h1 {
   font-size: 60px;
   font-weight: 700;
@@ -119,14 +121,14 @@
   margin-top: 8px;
 }
 
-/* blogs.jsx */
+/*? blogs.jsx */
 .blogWrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* projects.jsx */
+/*? projects.jsx */
 .projectWrapper {
   display: flex;
   flex-direction: column;
@@ -196,7 +198,7 @@
   background-color: #272727;
 }
 
-/* about.jsx */
+/*? about.jsx */
 #me {
   width: 100%;
   margin-bottom: 40px;
@@ -275,6 +277,8 @@
 }
 
 @media only screen and (max-width: 800px) {
+  /*? index.jsx */
+
   .hero h1 {
     font-size: 32px;
     line-height: 1.4;
@@ -303,7 +307,7 @@
     flex-direction: column;
   }
 
-  /* projects.jsx */
+  /*? projects.jsx */
   .projectCard img {
     margin-bottom: 28px;
   }
@@ -321,7 +325,7 @@
     font-size: 14px;
   }
 
-  /* about.jsx */
+  /*? about.jsx */
   #me {
     margin-top: 1rem;
   }
