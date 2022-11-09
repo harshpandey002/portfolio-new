@@ -24,10 +24,10 @@ export default function Projects() {
 
           <motion.p variants={noStagger}>
             <AnimatedText>
-              From one page sites to the worlds first mobile sitebuilder, I’ve
-              spent years designing and building products of varying sizes.
-              Here’s a small selection of some of my recent projects and
-              experiences.
+              From one page sites, to the highly secure bug bounty platform, to
+              NFT Marketplace, I’ve build products of varying types and sizes,
+              using most awesome technologies out there. Here’s a small
+              selection of some of my recent projects and experiences.
             </AnimatedText>
           </motion.p>
         </motion.div>
