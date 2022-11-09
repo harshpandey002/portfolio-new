@@ -142,7 +142,6 @@
 .projectCard img {
   border-radius: 8px;
   width: 100%;
-  filter: brightness(0.8) contrast(1.2);
   margin-bottom: 40px;
 }
 

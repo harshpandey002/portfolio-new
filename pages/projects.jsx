@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
+import { projects } from "helper/projects";
 import { BiLinkExternal } from "react-icons/bi";
 
 export default function Projects() {
@@ -47,23 +48,21 @@ export default function Projects() {
           exit="exit"
           className={styles.projectWrapper}
         >
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          {projects.map((data, i) => (
+            <Project key={i + 1} data={data} />
+          ))}
         </motion.div>
       </div>
     </Layout>
   );
 }
 
-function Project() {
+function Project({ data }) {
   return (
     <div className={styles.projectCard}>
-      <img src="designvault.png" alt="Project Image" />
+      <img src={data.image} alt={data.title} />
       <div className={styles.info}>
-        <h4>Go Connect: Bookings</h4>
+        <h4>{data.title}</h4>
 
         <div className={styles.projectDesc}>
           <p>

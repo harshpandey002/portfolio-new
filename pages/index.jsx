@@ -14,6 +14,7 @@ import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
 import { fadeIn, hr, item, noStagger, stagger } from "helper/animate";
 import { FaLinkedinIn } from "react-icons/fa";
+import { featured } from "helper/featured";
 
 export default function Home() {
   return (
@@ -131,10 +132,13 @@ export default function Home() {
           className={styles.featured}
         >
           <h2>Featured Projects</h2>
-          <p>A collection of some side projects that have shipped recently.</p>
+          <p>
+            A collection of some side projects that I have shipped recently.
+          </p>
           <div className={styles.projects}>
-            <ProjectCard />
-            <ProjectCard />
+            {featured.map((data, i) => (
+              <ProjectCard key={i + 1} data={data} />
+            ))}
           </div>
         </motion.div>
       </div>
