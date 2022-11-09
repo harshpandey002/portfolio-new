@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineTwitter,
+  AiFillMail,
 } from "react-icons/ai";
 import Layout from "../components/Layout";
 
@@ -51,27 +52,63 @@ export default function Home() {
 
           <motion.div variants={stagger} className={styles.socials}>
             <span className="outerSpan">
-              <motion.span variants={item} className="innerSpan">
+              <motion.span
+                onClick={() => open("https://twitter.com/harshpandey_002")}
+                variants={item}
+                className="innerSpan"
+              >
                 <AiOutlineTwitter className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
-              <motion.span variants={item} className="innerSpan">
+              <motion.span
+                onClick={() =>
+                  open("https://www.instagram.com/harshpandey_002/")
+                }
+                variants={item}
+                className="innerSpan"
+              >
                 <AiOutlineInstagram className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
-              <motion.span variants={item} className="innerSpan">
+              <motion.span
+                onClick={() => open("https://github.com/harshpandey002")}
+                variants={item}
+                className="innerSpan"
+              >
                 <AiFillGithub className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
-              <motion.span variants={item} className="innerSpan">
+              <motion.span
+                onClick={() =>
+                  open(
+                    "https://www.linkedin.com/in/harsh-kumar-pandey-5ab9071aa/"
+                  )
+                }
+                variants={item}
+                className="innerSpan"
+              >
                 <FaLinkedinIn className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
-              <motion.button variants={item} id={styles.email}>
+              <motion.span
+                onClick={() => open("mailto:coding.harshp@gmail.com")}
+                variants={item}
+                className="innerSpan"
+                id={styles.emailIcon}
+              >
+                <AiFillMail className={styles.icon} />
+              </motion.span>
+            </span>
+            <span className="outerSpan">
+              <motion.button
+                onClick={() => open("mailto:coding.harshp@gmail.com")}
+                variants={item}
+                id={styles.emailBtn}
+              >
                 Email me
               </motion.button>
             </span>
