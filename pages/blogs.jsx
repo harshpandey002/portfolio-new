@@ -45,12 +45,9 @@ export default function Blogs() {
           exit="exit"
           className={styles.blogWrapper}
         >
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {[].map((data, i) => (
+            <ProjectCard key={i + 1} data={data} />
+          ))}
         </motion.div>
       </div>
     </Layout>

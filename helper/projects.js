@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     image: "erc20.png",
-    title: "Project ERC20",
+    title: "Project-ERC20",
   },
   {
     image: "hexabug.png",
