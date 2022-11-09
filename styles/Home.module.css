@@ -262,6 +262,11 @@
   font-weight: 600;
 }
 
+#freelance {
+  color: rgb(61, 61, 61);
+  font-style: italic;
+}
+
 .details {
   display: flex;
   align-items: center;

@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
+import { open } from "helper/function";
 import { projects } from "helper/projects";
 import { BiLinkExternal } from "react-icons/bi";
 
@@ -58,11 +59,13 @@ export default function Projects() {
 }
 
 function Project({ data }) {
+  const { image, title, description, skills, url } = data;
+
   return (
     <div className={styles.projectCard}>
-      <img src={data.image} alt={data.title} />
+      <img src={image} alt={title} />
       <div className={styles.info}>
-        <h4>{data.title}</h4>
+        <h4>{title}</h4>
 
         <div className={styles.projectDesc}>
           <p>
@@ -78,15 +81,15 @@ function Project({ data }) {
         </div>
 
         <div className={styles.skills}>
-          {["React", "Nextjs", "Thirdweb", "Moralis"].map((skill, i) => (
+          {skills?.map((skill, i) => (
             <>
               <span key={i + 1}>{skill}</span>
             </>
           ))}
         </div>
 
-        <button>
-          basekit.com <BiLinkExternal />
+        <button onClick={() => open(url.link)} disabled={!url.link}>
+          {url.label} {!!url.link && <BiLinkExternal />}
         </button>
       </div>
     </div>

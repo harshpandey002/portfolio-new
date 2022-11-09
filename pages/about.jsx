@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { fadeIn, hr, image, noStagger, stagger } from "helper/animate";
+import { work } from "helper/work";
 
 export default function About() {
   return (
@@ -90,10 +91,9 @@ export default function About() {
         <motion.div variants={fadeIn} className={styles.work}>
           <h3>Work</h3>
           <div className={styles.table}>
-            <Work />
-            <Work />
-            <Work />
-            <Work />
+            {work.map((data, i) => (
+              <Work key={i + 1} data={data} />
+            ))}
           </div>
         </motion.div>
 
@@ -120,13 +120,17 @@ export default function About() {
   );
 }
 
-function Work() {
+function Work({ data }) {
+  const { title, role, isFreelance, date } = data;
   return (
     <div className={styles.row}>
-      <p className={styles.org}>BlockTrain</p>
+      <p className={styles.org}>
+        {title}{" "}
+        {isFreelance ? <span id={styles.freelance}>(Freelance)</span> : ""}
+      </p>
       <span className={styles.details}>
-        <p>Full Stack Blockchain Developer</p>
-        <p>Aug 2022 - Dec 2022</p>
+        <p>{role}</p>
+        <p>{date}</p>
       </span>
     </div>
   );
