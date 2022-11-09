@@ -108,13 +108,13 @@
   height: 100%;
 }
 
-.info h5 {
+.projectInfo h5 {
   font-size: 18px;
   font-weight: 400;
   color: #eaeaea;
 }
 
-.info p {
+.projectInfo p {
   font-size: 16px;
   color: #b1b1b1;
   line-height: var(--line-height);

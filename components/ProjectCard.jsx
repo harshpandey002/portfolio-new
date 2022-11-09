@@ -7,7 +7,7 @@ export default function ProjectCard() {
       <span className={styles.img}>
         <img src="project-Icon.png" alt="projectIcon" />
       </span>
-      <span className={styles.info}>
+      <span className={styles.projectInfo}>
         <h5>Design Vault</h5>
         <p>
           A curated library of screenshots & interaction patterns from the world

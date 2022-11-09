@@ -23,11 +23,9 @@ export default function Blogs() {
 
           <motion.p variants={noStagger}>
             <AnimatedText>
-              I write articles on JavaScript, Python, Software Development, Web
-              3.0 and General Programming. If you enjoyed my articles or found
-              them useful, please consider supporting me by becoming a sponsor.
-              It will undoubtedly encourage me to continue writing article in
-              the future.
+              As I’m learning, I like to document my journey by writing articles
+              on popular Web3.0 technologies, libraries, and projects I build to
+              help other devs understand the concepts as well.
             </AnimatedText>
           </motion.p>
         </motion.div>
