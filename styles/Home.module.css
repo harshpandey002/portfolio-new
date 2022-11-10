@@ -298,8 +298,9 @@
 }
 
 #about {
-  list-style-position: inside;
-  padding-left: 1rem;
+  /* list-style-position: inside; */
+  padding-left: 2rem;
+  line-height: var(--line-height);
   display: flex;
   flex-direction: column;
   gap: 12px;
