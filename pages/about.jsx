@@ -106,6 +106,65 @@ export default function About() {
         />
 
         <motion.div variants={fadeIn} className={styles.work}>
+          <h3>About this site</h3>
+          <p id={styles.sponsor}>In case you were wondering this site is</p>
+          <ul id={styles.about}>
+            <li>
+              Designed by{" "}
+              <a
+                href="https://dribbble.com/daleanthony"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Dale Anthony
+              </a>
+              .
+            </li>
+            <li>
+              Developed by me using{" "}
+              <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+                Nextjs
+              </a>
+              .
+            </li>
+            <li>
+              Animated using{" "}
+              <a
+                href="https://www.framer.com/motion/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Framer Motion
+              </a>
+              .
+            </li>
+            <li>
+              Hosted by{" "}
+              <a
+                href="https://www.hostinger.in/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Hostinger
+              </a>{" "}
+              with deployement via{" "}
+              <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+                Vercel
+              </a>
+              .
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* <motion.hr
+          variants={hr}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          id="hr"
+        />
+
+        <motion.div variants={fadeIn} className={styles.work}>
           <h3>Support Me</h3>
           <p id={styles.sponsor}>
             I write articles on JavaScript, Python, Software Development, Web
@@ -114,7 +173,7 @@ export default function About() {
             will undoubtedly encourage me to continue writing article in the
             future.
           </p>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </Layout>
   );
