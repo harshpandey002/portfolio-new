@@ -68,16 +68,9 @@ function Project({ data }) {
         <h4>{title}</h4>
 
         <div className={styles.projectDesc}>
-          <p>
-            An online booking system for in-person or online appointments,
-            designed to work standalone or alongside BaseKit Sitebuilder.
-          </p>
-
-          <p>
-            During this year-long project, I worked on every stage from
-            conception, wireframing, IA mapping, prototyping, detailed mockups
-            through development and launch.
-          </p>
+          {description.map((desc, i) => (
+            <p key={i + 1}>{desc}</p>
+          ))}
         </div>
 
         <div className={styles.skills}>
