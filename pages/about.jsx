@@ -46,15 +46,15 @@ export default function About() {
           </p>
           <p>
             <AnimatedText>
-              Fun fact: I began working full-time at AppSecure seven months
-              before I graduated from college in January 2022.
+              I began working full-time at AppSecure seven months before I
+              graduated from college in January 2022.
             </AnimatedText>
           </p>
           <p>
             <AnimatedText>
-              Another fun fact: In August 2022, I left my first full-time
-              position at AppSecure in order to study blockchain programming and
-              contribute to the Web3 community.
+              In August 2022, I left my first full-time position at AppSecure in
+              order to study blockchain programming and contribute to the Web3
+              community.
             </AnimatedText>
           </p>
 
@@ -103,7 +103,7 @@ export default function About() {
 
         <motion.div variants={fadeIn} className={styles.work}>
           <h3>About this site</h3>
-          <p id={styles.sponsor}>In case you were wondering this site is</p>
+          <p id={styles.sponsor}>In case you were wondering, this site is</p>
           <ul id={styles.about}>
             <li>
               Designed by{" "}

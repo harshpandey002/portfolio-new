@@ -20,7 +20,7 @@ export const projects = [
       link: "https://blocktrain.info",
     },
     description: [
-      "An education platform where user can learn everything uses need to know about Web3 and Blockchain with a series of articles, in-depth tutorials, structured courses and complete project guides.",
+      "An educational platform where user can learn everything user need to know about Web3 and Blockchain with a series of articles, in-depth tutorials, structured courses and complete project guides.",
     ],
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
       link: "https://react-medium.netlify.app/",
     },
     description: [
-      "A Basic Note taking application, implemented with react-quill rich text editor. This application is very minimalistic in design with smooth transitions and animations with framer-motion. Using Redux to for state management.",
+      "A Basic Note taking application, implemented with react-quill rich text editor. This application is very minimalistic in design with smooth transitions and animations with framer-motion. Redux is being used for state management.",
     ],
   },
 ];

@@ -29,7 +29,7 @@ export default function Projects() {
               I’ve built products of various types and sizes using the most
               popular technologies out there, ranging from one page sites to the
               super secure bug bounty platform to NFT Marketplace. Here is a
-              selection of some of my projects and experiences.
+              collection of some of my projects and experiences.
             </AnimatedText>
           </motion.p>
         </motion.div>
