@@ -3,7 +3,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
-import { cards, hr, noStagger, stagger } from "helper/animate";
+import { cards, fadeIn, hr, noStagger, stagger } from "helper/animate";
 import { open } from "helper/function";
 import { projects } from "helper/projects";
 import { BiLinkExternal } from "react-icons/bi";
@@ -52,6 +52,40 @@ export default function Projects() {
           {projects.map((data, i) => (
             <Project key={i + 1} data={data} />
           ))}
+        </motion.div>
+
+        <motion.hr
+          variants={hr}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          id="hr"
+        />
+
+        <motion.div variants={fadeIn} className={styles.work}>
+          <h3>Graveyard</h3>
+          <p id={styles.sponsor}>
+            Significant projects I worked on that are now retired.
+          </p>
+
+          <div className={styles.graveyard}>
+            <div className={styles.deadProject}>
+              <h4>EduCompanion</h4>
+              <p>
+                Another Education Platform but with affiliate links, users can
+                explore learning paths and courses required to excel in a
+                perticular domain.
+              </p>
+            </div>
+            <div className={styles.deadProject}>
+              <h4>Beyond Pinks</h4>
+              <p>
+                A Mentoring Platform focused on women and LGBT of coorporates
+                where an employees can book a slot with leaders of big companies
+                and get mentored on different aspects of life.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </Layout>
