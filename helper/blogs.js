@@ -3,20 +3,20 @@ export const blogs = [
     image: "hardhatIcon.png",
     title: "Get started with Solidity, Hardhat and Etherjs",
     description:
-      "If you are new to web3 space, learn step by step how to write, deploy and interact with smart contract using most popular stack out there i.e. Solidity, Hardhat and Etherjs.",
+      "Learn step-by-step how to build, deploy, and interact with smart contracts using the most popular stack available in the market, i.e. Solidity, Hardhat, and Etherjs,",
     link: "https://www.blocktrain.info/blog/get-started-with-solidity-hardhat-and-etherjs",
   },
   {
     image: "walletIcon.png",
     title: "Handle wallets with Thirdweb",
     description:
-      "Thirdweb SDK makes it super easy to handle wallets and their events in the frontend application. Learn through this short blog.",
+      "Handling wallets and their events in the frontend application is incredibly simple with the Thirdweb SDK. Learn from this brief blog.",
     link: "https://www.blocktrain.info/blog/handle-wallets-with-thirdweb",
   },
   {
     image: "thirdwebIcon.png",
     title: "Build NFT Marketplace using thirdweb",
     description:
-      "Learn to easily interact with any smart contracts and create your own NFT Marketplace using thirdweb SDK and pre-built contracts. No backend or Baas required.",
+      "Learn how to use the thirdweb SDK and pre-built contracts to construct your own NFT Marketplace and interact with any smart contract with ease. No Baas or backend are necessary.",
   },
 ];

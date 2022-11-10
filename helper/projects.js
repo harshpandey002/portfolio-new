@@ -8,7 +8,7 @@ export const projects = [
       link: "https://openriver-thirdweb.vercel.app/",
     },
     description: [
-      "Modern NFT Marketplace developed using thirdweb pre-built contract and Moralis web3 API. OpenRiver don’t have any back end or Baas.",
+      "NFT Marketplace developed using thirdweb SDK & pre-built contracts and Moralis web3 API without any backend or Baas.",
     ],
   },
   {

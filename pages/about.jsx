@@ -46,32 +46,32 @@ export default function About() {
           </p>
           <p>
             <AnimatedText>
-              Fun fact: I got my first full-time job at AppSecure, 7 months
-              before graduating from college i.e on Jan 2022.
+              Fun fact: I began working full-time at AppSecure seven months
+              before I graduated from college in January 2022.
             </AnimatedText>
           </p>
           <p>
             <AnimatedText>
-              Another fun fact: I left my first full-time job at AppSecure on
-              Aug 2022, to learn blockchain development and contribute to Web3
-              space.
-            </AnimatedText>
-          </p>
-
-          <p>
-            <AnimatedText>
-              I started Freelancing during my 3rd year in college. Fortunately,
-              I did my first project (EduCompanion) with a client from Spain. I
-              learned so much not only technical skills but also soft skills
-              like dealing with clients professionally.
+              Another fun fact: In August 2022, I left my first full-time
+              position at AppSecure in order to study blockchain programming and
+              contribute to the Web3 community.
             </AnimatedText>
           </p>
 
           <p>
             <AnimatedText>
-              Outside of work, my hobbies include trading & investing, working
-              out, exploring new cafés, watching tv series & movies, tinkering
-              with technology.
+              In my third year in college, I began freelancing. Fortunately, I
+              worked with a client in Spain on my first project, EduCompanion.
+              Not only did I polished my technical knowledge, but also acquired
+              soft skills like how to professionally deal with clients.
+            </AnimatedText>
+          </p>
+
+          <p>
+            <AnimatedText>
+              My interests outside of work include trading & investing,
+              weightlifting, discovering new cafés, watching TV shows & movies,
+              and exploring latest electronic gadgets.
             </AnimatedText>
           </p>
         </motion.div>

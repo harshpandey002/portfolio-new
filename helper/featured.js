@@ -10,7 +10,7 @@ export const featured = [
     image: "openriverIcon.png",
     title: "OpenRiver",
     description:
-      "Modern NFT Marketplace developed using thirdweb pre-built contracts and moralis web3 API. OpenRiver don't have any backend or Baas.",
+      "NFT Marketplace developed using thirdweb SDK & pre-built contracts and Moralis web3 API without any backend or Baas.",
     link: "https://openriver-thirdweb.vercel.app/",
   },
 ];

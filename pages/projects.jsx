@@ -26,10 +26,10 @@ export default function Projects() {
 
           <motion.p variants={noStagger}>
             <AnimatedText>
-              From one page sites, to the highly secure bug bounty platform, to
-              NFT Marketplace, I’ve build products of varying types and sizes,
-              using most awesome technologies out there. Here’s a small
-              selection of some of my recent projects and experiences.
+              I’ve built products of various types and sizes using the most
+              popular technologies out there, ranging from one page sites to the
+              super secure bug bounty platform to NFT Marketplace. Here is a
+              selection of some of my projects and experiences.
             </AnimatedText>
           </motion.p>
         </motion.div>
