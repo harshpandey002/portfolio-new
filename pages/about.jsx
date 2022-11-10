@@ -61,7 +61,7 @@ export default function About() {
           <p>
             <AnimatedText>
               I started Freelancing during my 3rd year in college. Fortunately,
-              I did my first project (EduCompanion) with an Client in Spain. I
+              I did my first project (EduCompanion) with a client from Spain. I
               learned so much not only technical skills but also soft skills
               like dealing with clients professionally.
             </AnimatedText>
