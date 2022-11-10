@@ -33,7 +33,7 @@ export const projects = [
     },
     description: [
       "A full-stack web3 project where you can Mint, Transfer and Burn your HKP (Harsh Kumar Pandey) token.",
-      "Created and Deployed a ERC20 Token Smart Contract with the help of OpenZeppelin. I've used Hardhat for Compiling and deploying smart contract to Goerli Testnet, and Etherjs for interacting with the smart contract.",
+      "Using OpenZeppelin, I created an ERC20 Token Smart Contract, compiled and deployed to Goerli Testnet using Hardhat. I used Etherjs in the frontend to interact with the smart contract.",
     ],
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     },
     description: [
       "A bug bounty platform, where security researchers can report security vulnerablities in organization's web or mobile applications and get rewarded in case of valid submission.",
-      "My role in the project was to design and develop front-end of the application. The application is using Auth0 for authenticating users and also have complex features like Jira/Slack Integration, Custom Markdown Syntax, Secure embeddable form and much more. Currently portal is not open for all to use.",
+      "My role in the project was to design and develop front-end of the application. HexaBug uses Auth0 to authenticate users and has sophisticated features like Jira/Slack integration, custom markdown syntax, secure embeddable forms, and more. Currently portal is not open for all to use.",
     ],
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
       link: "https://tradebook.vercel.app/",
     },
     description: [
-      "A MERN Stack Trade Journaling Application for intraday traders to review their trades from different trading platform which will help them control their risk per trade and keep track of their progress.",
+      "A full-stack Trade Journaling Application for intraday traders to review their trades from different trading platform which will help them control their risk per trade and keep track of their progress.",
     ],
   },
   {
