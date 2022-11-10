@@ -10,7 +10,7 @@ import { BiLinkExternal } from "react-icons/bi";
 
 export default function Projects() {
   return (
-    <Layout>
+    <Layout title="Projects – Harsh Pandey">
       <div className={styles.container}>
         <motion.div
           key="projects"

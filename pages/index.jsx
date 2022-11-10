@@ -18,7 +18,7 @@ import { featured } from "helper/featured";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title="Harsh Pandey – Full-Stack Blockchain Developer">
       <div className={styles.homeContainer}>
         <motion.div
           key="home"

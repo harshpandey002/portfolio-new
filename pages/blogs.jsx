@@ -8,7 +8,7 @@ import { blogs } from "helper/blogs";
 
 export default function Blogs() {
   return (
-    <Layout>
+    <Layout title="Blogs – Harsh Pandey">
       <div className={styles.container}>
         <motion.div
           key="blogs"

@@ -8,7 +8,7 @@ import { work } from "helper/work";
 
 export default function About() {
   return (
-    <Layout>
+    <Layout title="About – Harsh Pandey">
       <motion.div
         key="about"
         initial="hidden"
