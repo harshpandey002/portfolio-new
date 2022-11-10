@@ -10,6 +10,8 @@ export default function Layout({ title, description, children }) {
         <title>{title}</title>
         <meta name="title" content={title} />
         <meta name="description" content={description} />
+        <meta property="og:image" content="about.png" />
+
         <link
           rel="apple-touch-icon"
           sizes="57x57"
