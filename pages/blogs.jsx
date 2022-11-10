@@ -24,8 +24,8 @@ export default function Blogs() {
 
           <motion.p variants={noStagger}>
             <AnimatedText>
-              As I’m learning, I like to document my journey by writing articles
-              on popular Web3.0 technologies, libraries, and projects I build to
+              As I learn, I like to document my journey by writing articles on
+              popular Web3.0 technologies, libraries, and projects I build to
               help other devs understand the concepts as well.
             </AnimatedText>
           </motion.p>

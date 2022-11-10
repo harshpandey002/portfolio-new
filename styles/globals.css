@@ -34,10 +34,15 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
+button:disabled,
+.disabled {
   pointer-events: none;
   opacity: 0.4;
   font-style: italic;
+}
+
+.disabled {
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
