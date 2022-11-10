@@ -62,7 +62,13 @@ export default function Projects() {
           id="hr"
         />
 
-        <motion.div variants={fadeIn} className={styles.work}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={fadeIn}
+          className={styles.work}
+        >
           <h3>Graveyard</h3>
           <p id={styles.sponsor}>
             Significant projects I worked on that are now retired.

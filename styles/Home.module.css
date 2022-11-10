@@ -410,8 +410,7 @@
     align-items: flex-start;
   }
 
-  .details p,
-  #sponsor {
-    color: #989898;
+  .details p {
+    color: #b1b1b1;
   }
 }
