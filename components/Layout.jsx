@@ -10,7 +10,10 @@ export default function Layout({ title, description, children }) {
         <title>{title}</title>
         <meta name="title" content={title} />
         <meta name="description" content={description} />
-        <meta property="og:image" content="about.png" />
+        <meta
+          property="og:image"
+          content="https://www.harshkumarpandey.com/about.png"
+        />
 
         <link
           rel="apple-touch-icon"
@@ -95,5 +98,5 @@ export default function Layout({ title, description, children }) {
 
 Layout.defaultProps = {
   title: "Harsh Kumar Pandey",
-  description: "UI/UX Designer and Full Stack web3 Developer.",
+  description: "UI/UX Designer and Full Stack Blockchain Developer.",
 };
