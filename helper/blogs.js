@@ -1,4 +1,4 @@
-export const featured = [
+export const blogs = [
   {
     image: "blocktrainIcon.png",
     title: "BlockTrain",

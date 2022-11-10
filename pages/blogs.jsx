@@ -4,6 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
+import { blogs } from "helper/blogs";
 
 export default function Blogs() {
   return (
@@ -45,7 +46,7 @@ export default function Blogs() {
           exit="exit"
           className={styles.blogWrapper}
         >
-          {[].map((data, i) => (
+          {blogs.map((data, i) => (
             <ProjectCard key={i + 1} data={data} />
           ))}
         </motion.div>
