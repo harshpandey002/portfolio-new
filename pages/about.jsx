@@ -30,52 +30,48 @@ export default function About() {
         <motion.div variants={noStagger} className={styles.about}>
           <p>
             <AnimatedText>
-              I’m Dale a UK based product designer with over ten years of
-              experience. I specialise in interface design for mobile and
-              web-based applications with a focus on simplicity & usability. I’m
-              passionate about design and technology and how the two can
-              converge to create experiences for good.
+              I’m Harsh Pandey, an India based Full-Stack blockchain developer
+              with over two years of development experience. I specialise in
+              developing responsive user interfaces for web-based applications
+              with a focus on secure and smooth user experience.
             </AnimatedText>
           </p>
           <p>
             <AnimatedText>
-              I’m currently working at WP Engine on some of the worlds best
-              WordPress products. Before WP Engine I worked at BaseKit where I
-              designed web applications like the worlds first fully functional
-              mobile website builder, a commerce platform, dashboard, mobile
-              application, and an online booking system.
+              I’m currently working as freelancer at blocktrain.info where you
+              can find best resources to become excellent blockchain developer.
+              Before that, I worked at AppSecure where I designed and developed
+              Pentabug, a highly secure bug bounty platform.
             </AnimatedText>
           </p>
           <p>
             <AnimatedText>
-              Before BaseKit I spent some time working for web agencies
-              designing everything from one-page websites to native mobile
-              applications. Over the years I’ve been lucky enough to work with
-              companies like Nationwide, BP, Telefónica, Apple & Amazon.
+              Fun fact: I got my first full-time job at AppSecure, 7 months
+              before graduating from college i.e on Jan 2022.
             </AnimatedText>
           </p>
-
           <p>
             <AnimatedText>
-              You can also find me working on my own projects: Design Vault, an
-              online library of UX/UI patterns and inspiration from real
-              products, and Does.Design, an inclusive community for designers of
-              all backgrounds and skill levels.
+              Another fun fact: I left my first full-time job at AppSecure on
+              Aug 2022, to learn blockchain development and contribute to Web3
+              space.
             </AnimatedText>
           </p>
 
           <p>
             <AnimatedText>
-              Outside of work my hobbies include exploring new coffee places,
-              playing video games, watching sci-fi shows & movies, tinkering
-              with technology and taking too many photos of my cat, Pixel.
+              I started Freelancing during my 3rd year in college. Fortunately,
+              I did my first project (EduCompanion) with an Client in Spain. I
+              learned so much not only technical skills but also soft skills
+              like dealing with clients professionally.
             </AnimatedText>
           </p>
 
           <p>
             <AnimatedText>
-              You can follow along with my work, personal projects and
-              occasional insights into my life on Twitter and Instagram.
+              Outside of work my hobbies include trading & investing, weight
+              training, exploring new cafés, watching tv series & movies,
+              tinkering with technology.
             </AnimatedText>
           </p>
         </motion.div>
@@ -185,7 +181,9 @@ function Work({ data }) {
     <div className={styles.row}>
       <p className={styles.org}>
         {title}{" "}
-        {isFreelance ? <span id={styles.freelance}>(Freelance)</span> : ""}
+        <span id={styles.freelance}>
+          {isFreelance ? "(Freelance)" : "(Full-time)"}
+        </span>
       </p>
       <span className={styles.details}>
         <p>{role}</p>

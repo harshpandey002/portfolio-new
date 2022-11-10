@@ -39,7 +39,7 @@ export const projects = [
   {
     image: "hexabug.png",
     title: "HexaBug",
-    skills: ["Reactjs"],
+    skills: ["Reactjs", "Auth0"],
     url: {
       label: "Confidential",
     },
