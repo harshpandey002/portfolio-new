@@ -69,9 +69,9 @@ export default function About() {
 
           <p>
             <AnimatedText>
-              Outside of work my hobbies include trading & investing, weight
-              training, exploring new cafés, watching tv series & movies,
-              tinkering with technology.
+              Outside of work, my hobbies include trading & investing, working
+              out, exploring new cafés, watching tv series & movies, tinkering
+              with technology.
             </AnimatedText>
           </p>
         </motion.div>
