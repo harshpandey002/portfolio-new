@@ -37,9 +37,10 @@ export default function Home() {
           <motion.p variants={noStagger}>
             <AnimatedText>
               I’m Harsh Pandey, an India based Full-Stack blockchain developer
-              with over two years of experience. I specialise in developing
-              responsive user interfaces for web-based applications with a focus
-              on secure and smooth user experience.
+              with over two years of development experience with Reactjs/Nextjs.
+              I specialise in developing responsive user interfaces for
+              web-based applications with a focus on secure and smooth user
+              experience.
             </AnimatedText>
           </motion.p>
           <motion.p id={styles.desc} variants={noStagger}>
