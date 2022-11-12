@@ -86,7 +86,7 @@ export default function Home() {
               <motion.span
                 onClick={() =>
                   open(
-                    "https://www.linkedin.com/in/harsh-kumar-pandey-5ab9071aa/"
+                    "https://www.linkedin.com/in/harshpandey002"
                   )
                 }
                 variants={item}
