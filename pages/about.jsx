@@ -23,7 +23,7 @@ export default function About() {
             animate="visible"
             exit="exit"
             variants={image}
-            src="about.png"
+            src="about.webp"
             alt="Me"
           />
         </div>
