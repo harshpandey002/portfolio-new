@@ -55,7 +55,7 @@ export default function Home() {
           <motion.div variants={stagger} className={styles.socials}>
             <span className="outerSpan">
               <motion.span
-                onClick={() => open("https://twitter.com/harshpandey_002")}
+                onClick={() => open("https://twitter.com/harshpandey002")}
                 variants={item}
                 className="innerSpan"
               >
@@ -85,9 +85,7 @@ export default function Home() {
             <span className="outerSpan">
               <motion.span
                 onClick={() =>
-                  open(
-                    "https://www.linkedin.com/in/harshpandey002"
-                  )
+                  open("https://www.linkedin.com/in/harshpandey002")
                 }
                 variants={item}
                 className="innerSpan"
