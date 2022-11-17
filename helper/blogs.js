@@ -18,5 +18,6 @@ export const blogs = [
     title: "Build NFT Marketplace using thirdweb",
     description:
       "Learn how to use the thirdweb SDK and pre-built contracts to construct your own NFT Marketplace and interact with any smart contract with ease. No Baas or backend are necessary.",
+    link: "https://www.blocktrain.info/blog/build-nft-marketplace-using-thirdweb",
   },
 ];
