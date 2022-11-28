@@ -15,9 +15,15 @@ export const blogs = [
   },
   {
     image: "thirdwebIcon.png",
-    title: "Build NFT Marketplace using thirdweb",
+    title: "Build NFT Marketplace using Thirdweb",
     description:
       "Learn how to use the thirdweb SDK and pre-built contracts to construct your own NFT Marketplace and interact with any smart contract with ease. No Baas or backend are necessary.",
     link: "https://www.blocktrain.info/blog/build-nft-marketplace-using-thirdweb",
+  },
+  {
+    image: "solidityIcon.png",
+    title: "Donation Dapp on Polygon.",
+    description:
+      "Utilize the most cutting-edge technology available to create a Donation Dapp (Dopp). Learn Solidity, Hardhat, Thirdweb SDK, IPFS, Tailwindcss, and Nextjs.",
   },
 ];
