@@ -22,8 +22,8 @@ export const blogs = [
   },
   {
     image: "solidityIcon.png",
-    title: "Donation Dapp on Polygon.",
+    title: "Crowdfunding Dapp on Polygon.",
     description:
-      "Utilize the most cutting-edge technology available to create a Donation Dapp (Dopp). Learn Solidity, Hardhat, Thirdweb SDK, IPFS, Tailwindcss, and Nextjs.",
+      "Utilize the most cutting-edge technology available to create a Crowdfunding/Donation Dapp (Dopp). Learn Solidity, Hardhat, Thirdweb SDK, IPFS, Tailwindcss, and Nextjs.",
   },
 ];
