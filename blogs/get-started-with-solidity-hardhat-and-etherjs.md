@@ -2,7 +2,7 @@
 title: "Get started with Solidity, Hardhat and Etherjs"
 slug: "get-started-with-solidity-hardhat-and-etherjs"
 description: "Learn step-by-step how to build, deploy, and interact with smart contracts using the most popular stack available in the market, i.e. Solidity, Hardhat, and Etherjs."
-image: "https://i.imgur.com/V7dmMmp.png"
+image: "https://i.imgur.com/DF14NnL.png"
 squareImage: "../hardhatIcon.png"
 date: "Oct 24, 2022"
 tags: ["Solidity", "Hardhat", "Etherjs", "Nextjs"]
