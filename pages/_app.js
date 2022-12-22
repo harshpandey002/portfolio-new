@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import Script from "next/script";
 import "@/styles/globals.css";
 import "@/styles/typography.css";
+import "@/styles/code.css";
 
 function MyApp({ Component, pageProps, router }) {
   return (

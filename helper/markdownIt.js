@@ -6,9 +6,10 @@ import slugify from "slugify";
 
 export const md = new MarkdownIt({
   breaks: true,
-  // linkify: true,
 })
-  .use(highlightjs)
+  .use(highlightjs, {
+    auto: true,
+  })
   .use(markdownCopy, {
     iconClass: "",
     buttonClass: "copyBtn",
