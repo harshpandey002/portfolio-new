@@ -3,7 +3,7 @@ export const blogs = [
     image: "hardhatIcon.png",
     title: "Get started with Solidity, Hardhat and Etherjs",
     description:
-      "Learn step-by-step how to build, deploy, and interact with smart contracts using the most popular stack available in the market, i.e. Solidity, Hardhat, and Etherjs,",
+      "Learn step-by-step how to build, deploy, and interact with smart contracts using the most popular stack available in the market, i.e. Solidity, Hardhat, and Etherjs.",
     link: "https://www.blocktrain.info/blog/get-started-with-solidity-hardhat-and-etherjs",
   },
   {
