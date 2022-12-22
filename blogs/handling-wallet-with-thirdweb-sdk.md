@@ -2,7 +2,7 @@
 title: "Handling wallet with Thirdweb SDK"
 slug: "handling-wallet-with-thirdweb-sdk"
 description: "Handling wallets and their events in the frontend application is incredibly simple with the Thirdweb SDK. Learn from this brief blog."
-image: "https://i.imgur.com/V7dmMmp.png"
+image: "https://i.imgur.com/84pEGOG.png"
 squareImage: "../walletIcon.png"
 date: "Nov 04, 2022"
 tags: ["Wallets", "Thirdweb", "Reactjs"]

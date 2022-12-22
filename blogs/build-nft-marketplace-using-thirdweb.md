@@ -2,7 +2,7 @@
 title: "Build NFT Marketplace using Thirdweb"
 slug: "build-nft-marketplace-using-thirdweb"
 description: "Learn how to use the thirdweb SDK and pre-built contracts to construct your own NFT Marketplace and interact with any smart contract with ease. No Baas or backend are necessary."
-image: "https://i.imgur.com/V7dmMmp.png"
+image: "https://i.imgur.com/9jDe3MM.png"
 squareImage: "../thirdwebIcon.png"
 date: "Nov 17, 2022"
 tags: ["Thirdweb", "Nextjs"]
