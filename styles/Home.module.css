@@ -153,6 +153,7 @@
 }
 
 #blogTags {
+  overflow: hidden;
   margin: 0 auto;
   margin-top: 20px;
   width: max-content;

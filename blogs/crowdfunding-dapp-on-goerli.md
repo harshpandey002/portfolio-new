@@ -6,7 +6,7 @@ image: "https://i.imgur.com/V7dmMmp.png"
 squareImage: "../solidityIcon.png"
 date: "Dec 22, 2022"
 tags: ["Solidity", "IPFS", "Thirdweb", "Nextjs"]
-isLive: false
+isLive: true
 ---
 
 ## 🤔 What the heck are we building?
