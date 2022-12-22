@@ -57,7 +57,7 @@ const App = () => {
 
 If you've built a connect to wallet in the past, you'll notice how it is way easier w/ thirdweb's client SDK since it handles common edge cases for you (ex. maintaining the state of a user's wallet in a variable).
 
-I've already writen a short yet consice blog on [Handling Wallets with thirdweb](https://www.blocktrain.info/blog/handle-wallets-with-thirdweb), consider going through it before we setup thirdweb marketplace pre-built contract.
+I've already writen a short yet consice blog on [Handling Wallets with thirdweb](https://www.harshkumarpandey.com/blogs/handling-wallet-with-thirdweb-sdk), consider going through it before we setup thirdweb marketplace pre-built contract.
 
 ## 🤑 Getting some fake $
 

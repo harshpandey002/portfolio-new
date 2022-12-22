@@ -15,7 +15,7 @@ Hi Devs, My name is Harsh Pandey and in this blogs we will see how easily you ca
 
 ## 👀 Prerequisites
 
-In order to understand exactly how thirdweb is simplifying wallets, you first need to know manual method of handling wallets. In case you don't know that. you can refer to my other blog [Get Started with Solidity, Hardhat and Etherjs](https://www.blocktrain.info/blog/get-started-with-solidity-hardhat-and-etherjs) and go to the section **Connecting to Wallet and handling events**.
+In order to understand exactly how thirdweb is simplifying wallets, you first need to know manual method of handling wallets. In case you don't know that. you can refer to my other blog [Get Started with Solidity, Hardhat and Etherjs](https://www.harshkumarpandey.com/blogs/get-started-with-solidity-hardhat-and-etherjs) and go to the section **Connecting to Wallet and handling events**.
 
 You also need to know concepts of react and hooks.
 
