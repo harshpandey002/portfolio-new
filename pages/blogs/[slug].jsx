@@ -1,31 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/Layout";
-import { md, readTime, sanitize } from "helper/markdownIt";
+import styles from "@/styles/Home.module.css";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { md, readTime, sanitize } from "helper/markdownIt";
+import path from "path";
 
 export default function BlogDetail({ frontmatter: blog, slug, content }) {
   console.log({ blog, slug, content });
 
-  const { image, title, date, description } = blog;
+  const { image, title, date, description, tags } = blog;
 
   return (
     <Layout>
       <div className={styles.blogDetail}>
         <h1 id={styles.blogTitle}>{title}</h1>
-        <p id={styles.blogDesc}>
+        <p id={styles.blogDetail}>
           {readTime(content)} min read | {date}
         </p>
-        <img id={styles.blogImg} src={image} alt="Alternate Text" />
+        <ul id={styles.blogTags}>
+          {tags.map((tag, i) => (
+            <li key={i + 1}>{tag}</li>
+          ))}
+        </ul>
+        <img id={styles.blogImg} src={image} alt={title} />
         <div
           className="content"
           dangerouslySetInnerHTML={{

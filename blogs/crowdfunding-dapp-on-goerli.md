@@ -1,6 +1,10 @@
 ---
 title: "Crowdfunding Dapp on Goerli"
-description: "Django is a very powerful, high level Python framework for building web applications"
+slug: "crowdfunding-dapp-on-goerli"
+description: "Utilize the most cutting-edge technology available to create a Crowdfunding/Donation Dapp (Dopp). Learn Solidity, Hardhat, Thirdweb SDK, IPFS, Tailwindcss, and Nextjs."
+image: "https://i.imgur.com/V7dmMmp.png"
+date: "22 Dec, 2022"
+tags: ["Solidity", "IPFS", "Thirdweb", "Nextjs"]
 ---
 
 ## 🤔 What the heck are we building?
@@ -8,7 +12,6 @@ description: "Django is a very powerful, high level Python framework for buildin
 Hi Devs, My name is [Harsh Pandey](https://harshkumarpandey.com) and in this blogs we will see how to develop a crowdfunding dapp using most popular and powerfull tech stack out there i.e. Solidity(ofcourse), thirdweb, tailwindcss and Nextjs.
 
 [Preview here](https://dopp.vercel.app/)
-![Project Image](https://i.imgur.com/V7dmMmp.png)
 
 ## 💎 What will you learn?
 
@@ -42,7 +45,7 @@ we'll use `@thirdweb-dev/react` to interact with the contract and to upload imag
 
 ## 📜 Let's create our Smart Contract
 
-```sol
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
@@ -168,9 +171,9 @@ contract Dopp {
 
 - You can send Ether to other contracts by
 
-  1. transfer (2300 gas, throws error)
-  2. send (2300 gas, returns bool)
-  3. call (forward all gas or set gas, returns bool)
+  - transfer (2300 gas, throws error)
+  - send (2300 gas, returns bool)
+  - call (forward all gas or set gas, returns bool)
 
 - Learn implementations of the three methods [here](https://solidity-by-example.org/sending-ether/).
 
