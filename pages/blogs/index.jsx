@@ -11,11 +11,8 @@ import path from "path";
 import matter from "gray-matter";
 import React from "react";
 import Link from "next/link";
-import ProjectCard from "@/components/ProjectCard";
 
-export default function Blogs({ blogs: posts }) {
-  console.log(posts);
-
+export default function Blogs({ blogs }) {
   return (
     <Layout title="Blogs – Harsh Pandey">
       <div className={styles.container}>
@@ -56,11 +53,8 @@ export default function Blogs({ blogs: posts }) {
           className={styles.blogWrapper}
         >
           {React.Children.toArray(
-            posts.map((data) => <BlogCard blog={data} />)
+            blogs.map((blog) => <BlogCard blog={blog} />)
           )}
-          {/* {React.Children.toArray(
-            blogs.map((data) => <ProjectCard data={data} />)
-          )} */}
         </motion.div>
       </div>
     </Layout>
@@ -94,7 +88,7 @@ export async function getStaticProps() {
   const files = fs.readdirSync(path.join("blogs"));
 
   // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
+  let blogs = files.map((filename) => {
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
       path.join("blogs", filename),
@@ -108,9 +102,21 @@ export async function getStaticProps() {
     };
   });
 
+  blogs.sort(sortByDate);
+
+  const unpublished = [];
+  const published = [];
+
+  blogs.forEach((blog) => {
+    if (blog.isLive) published.push(blog);
+    else unpublished.push(blog);
+  });
+
+  blogs = [...published, ...unpublished];
+
   return {
     props: {
-      blogs: posts.sort(sortByDate),
+      blogs,
     },
   };
 }
