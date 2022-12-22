@@ -1,17 +1,31 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "@/styles/Home.module.css";
 import Layout from "@/components/Layout";
-import { md, sanitize } from "helper/markdownIt";
+import { md, readTime, sanitize } from "helper/markdownIt";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import {
+  AiFillGithub,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
-export default function BlogDetail({ frontmatter, slug, content }) {
-  console.log({ frontmatter, slug, content });
+export default function BlogDetail({ frontmatter: blog, slug, content }) {
+  console.log({ blog, slug, content });
+
+  const { image, title, date, description } = blog;
 
   return (
     <Layout>
-      <div className={styles.container}>
+      <div className={styles.blogDetail}>
+        <h1 id={styles.blogTitle}>{title}</h1>
+        <p id={styles.blogDesc}>
+          {readTime(content)} min read | {date}
+        </p>
+        <img id={styles.blogImg} src={image} alt="Alternate Text" />
         <div
           className="content"
           dangerouslySetInnerHTML={{
