@@ -19,3 +19,9 @@ export const sanitize = (html) => {
   const result = html.replace(/<a href+/g, "<a target='_blank' href");
   return result;
 };
+
+export const readTime = (content) => {
+  const wpm = 225;
+  const words = content.trim().split(/\s+/).length;
+  return Math.ceil(words / wpm);
+};
