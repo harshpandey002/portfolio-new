@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
-import { blogs } from "helper/blogs";
 import { sortByDate } from "helper/util";
 import fs from "fs";
 import path from "path";
