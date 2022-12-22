@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, fadeIn, hr, noStagger, stagger } from "helper/animate";
-import { open } from "helper/function";
+import { open } from "@/helper/util";
 import { projects } from "helper/projects";
 import { BiLinkExternal } from "react-icons/bi";
 

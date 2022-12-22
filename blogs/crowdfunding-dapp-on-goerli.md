@@ -3,8 +3,10 @@ title: "Crowdfunding Dapp on Goerli"
 slug: "crowdfunding-dapp-on-goerli"
 description: "Utilize the most cutting-edge technology available to create a Crowdfunding/Donation Dapp (Dopp). Learn Solidity, Hardhat, Thirdweb SDK, IPFS, Tailwindcss, and Nextjs."
 image: "https://i.imgur.com/V7dmMmp.png"
+squareImage: "../solidityIcon.png"
 date: "22 Dec, 2022"
 tags: ["Solidity", "IPFS", "Thirdweb", "Nextjs"]
+isLive: false
 ---
 
 ## 🤔 What the heck are we building?

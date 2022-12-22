@@ -6,10 +6,8 @@ import matter from "gray-matter";
 import { md, readTime, sanitize } from "helper/markdownIt";
 import path from "path";
 
-export default function BlogDetail({ frontmatter: blog, slug, content }) {
-  console.log({ blog, slug, content });
-
-  const { image, title, date, description, tags } = blog;
+export default function BlogDetail({ frontmatter, content }) {
+  const { image, title, date, description, tags } = frontmatter;
 
   return (
     <Layout>
@@ -61,7 +59,6 @@ export async function getStaticProps({ params: { slug } }) {
   return {
     props: {
       frontmatter,
-      slug,
       content,
     },
   };

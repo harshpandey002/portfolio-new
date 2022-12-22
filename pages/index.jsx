@@ -7,6 +7,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import Layout from "../components/Layout";
+import { open } from "@/helper/util";
 
 import { motion } from "framer-motion";
 
