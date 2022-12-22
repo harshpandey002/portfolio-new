@@ -65,7 +65,7 @@ function BlogCard({ blog }) {
   const { title, squareImage, description, slug, isLive } = blog;
 
   return (
-    <Link href={`/blogs/${slug}`}>
+    <Link href={`/blogs/${slug}`} scroll={false}>
       <div className={`${styles.card} ${!isLive ? "disabled" : ""}`}>
         <span className={styles.img}>
           <img src={squareImage} alt={title} />

@@ -1,34 +1,55 @@
 /* eslint-disable @next/next/no-img-element */
+import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import fs from "fs";
 import matter from "gray-matter";
 import { md, readTime, sanitize } from "helper/markdownIt";
 import path from "path";
+import { motion } from "framer-motion";
+import { cards, fadeIn, item, noStagger, stagger } from "@/helper/animate";
+import React from "react";
 
 export default function BlogDetail({ frontmatter, content }) {
   const { image, title, date, description, tags } = frontmatter;
 
+  const detail = `${readTime(content)} min read | ${date}`;
+
   return (
     <Layout>
-      <div className={styles.blogDetail}>
-        <h1 id={styles.blogTitle}>{title}</h1>
-        <p id={styles.blogDetail}>
-          {readTime(content)} min read | {date}
-        </p>
-        <ul id={styles.blogTags}>
-          {tags.map((tag, i) => (
-            <li key={i + 1}>{tag}</li>
-          ))}
-        </ul>
-        <img id={styles.blogImg} src={image} alt={title} />
-        <div
+      <motion.div
+        key="BlogDetail"
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={stagger}
+        className={styles.blogDetail}
+      >
+        <h1 id={styles.blogTitle}>
+          <AnimatedText>{title}</AnimatedText>
+        </h1>
+        <motion.p variants={noStagger} id={styles.blogDetail}>
+          <AnimatedText>{detail}</AnimatedText>
+        </motion.p>
+        <motion.ul variants={stagger} id={styles.blogTags}>
+          {React.Children.toArray(
+            tags.map((tag) => <motion.li variants={item}>{tag}</motion.li>)
+          )}
+        </motion.ul>
+        <motion.img
+          variants={cards}
+          id={styles.blogImg}
+          src={image}
+          alt={title}
+        />
+        <motion.div
+          variants={cards}
           className="content"
           dangerouslySetInnerHTML={{
             __html: sanitize(md.render(content)),
           }}
-        ></div>
-      </div>
+        ></motion.div>
+      </motion.div>
     </Layout>
   );
 }
