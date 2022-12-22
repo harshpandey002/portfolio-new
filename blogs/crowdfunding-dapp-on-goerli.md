@@ -249,7 +249,7 @@ export default MyApp;
 
 I initially planed to deploy on `Mumbai Testnet` but transactions keep failing on the mumbai network probably due to [this](https://medium.com/stakingbits/polygon-minimum-gas-fee-is-now-30-gwei-to-curb-spam-8bd4313c83a2)
 
-Thirdweb provides with a `<ConnectWallet />` component ready to import and use. Learn everything about handling wallets with thirdweb [here](https://www.blocktrain.info/blog/handle-wallets-with-thirdweb)
+Thirdweb provides with a `<ConnectWallet />` component ready to import and use. Learn everything about handling wallets with thirdweb [here](https://www.harshkumarpandey.com/blogs/handling-wallet-with-thirdweb-sdk)
 
 In my case, I've used this wallet in Hero section. Once User connect their wallet, you can access their wallet address using `useAddress()` by thirdweb.
 

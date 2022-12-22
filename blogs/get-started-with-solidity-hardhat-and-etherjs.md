@@ -52,7 +52,7 @@ Preview [Project-ERC20](https://project-erc20.vercel.app/)
 
 If you're stuck somewhere and want help, you can message me on [LinkedIn](https://www.linkedin.com/in/harshpandey002/).
 
-_BlockTrain will support Comment and Reply soon._
+_Blogs will support Comment and Reply soon._
 
 ## 🏃‍♀️ Get your local environment up and running
 
