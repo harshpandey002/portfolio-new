@@ -10,12 +10,18 @@
   },
   "dependencies": {
     "framer-motion": "^7.6.4",
+    "gray-matter": "^4.0.3",
     "hamburger-react": "^2.5.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-code-copy": "^0.1.1",
+    "markdown-it-highlightjs": "^4.0.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-intersection-observer": "^9.4.0"
+    "react-intersection-observer": "^9.4.0",
+    "slugify": "^1.6.5"
   },
   "devDependencies": {
     "eslint": "8.26.0",
