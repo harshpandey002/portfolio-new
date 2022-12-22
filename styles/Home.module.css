@@ -17,7 +17,8 @@
   margin-top: 2rem;
 }
 
-.socials {
+.socials,
+#blogSocials {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -130,6 +131,41 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+/*? blogDetail [slug].jsx */
+#blogTitle {
+  text-align: center;
+  font-size: 48px;
+}
+
+#blogDesc {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #bababa;
+}
+
+#blogImg {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 4rem;
+}
+
+#blogSocials {
+  margin: 0 auto;
+  margin-top: 12px;
+  width: max-content;
+  gap: 2rem;
+}
+
+#blogSocials .icon {
+  cursor: pointer;
+}
+
+#blogSocials .icon:hover {
+  color: white;
 }
 
 /*? projects.jsx */
