@@ -1,12 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import { cards, hr, noStagger, stagger } from "helper/animate";
 import { blogs } from "helper/blogs";
+import { sortByDate } from "helper/util";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import React from "react";
+import Link from "next/link";
+import ProjectCard from "@/components/ProjectCard";
 
-export default function Blogs() {
+export default function Blogs({ blogs: posts }) {
+  console.log(posts);
+
   return (
     <Layout title="Blogs – Harsh Pandey">
       <div className={styles.container}>
@@ -46,11 +55,62 @@ export default function Blogs() {
           exit="exit"
           className={styles.blogWrapper}
         >
-          {blogs.map((data, i) => (
-            <ProjectCard key={i + 1} data={data} />
-          ))}
+          {React.Children.toArray(
+            posts.map((data) => <BlogCard blog={data} />)
+          )}
+          {/* {React.Children.toArray(
+            blogs.map((data) => <ProjectCard data={data} />)
+          )} */}
         </motion.div>
       </div>
     </Layout>
   );
+}
+
+function BlogCard({ blog }) {
+  const { title, squareImage, description, slug, isLive } = blog;
+
+  return (
+    <Link href={`/blogs/${slug}`}>
+      <div className={`${styles.card} ${!isLive ? "disabled" : ""}`}>
+        <span className={styles.img}>
+          <img src={squareImage} alt={title} />
+          {/* <img src="project-Icon.png" alt="projectIcon" /> */}
+        </span>
+        <span className={styles.projectInfo}>
+          <h5>
+            {title}{" "}
+            {!isLive && <span id={styles.freelance}>(Coming Soon)</span>}
+          </h5>
+          <p>{description}</p>
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+export async function getStaticProps() {
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join("blogs"));
+
+  // Get slug and frontmatter from posts
+  const posts = files.map((filename) => {
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join("blogs", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      ...frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      blogs: posts.sort(sortByDate),
+    },
+  };
 }
