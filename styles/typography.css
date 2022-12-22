@@ -279,3 +279,10 @@ li p {
 .content pre code {
   padding: 0;
 }
+
+@media only screen and (max-width: 800px) {
+  .content h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}

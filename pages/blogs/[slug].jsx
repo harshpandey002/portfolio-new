@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import { cards, item, noStagger, stagger } from "@/helper/animate";
 import styles from "@/styles/Home.module.css";
+import { motion } from "framer-motion";
 import fs from "fs";
 import matter from "gray-matter";
 import { md, readTime, sanitize } from "helper/markdownIt";
 import path from "path";
-import { motion } from "framer-motion";
-import { cards, fadeIn, item, noStagger, stagger } from "@/helper/animate";
 import React from "react";
 
 export default function BlogDetail({ frontmatter, content }) {
