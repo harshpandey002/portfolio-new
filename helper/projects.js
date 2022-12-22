@@ -1,5 +1,17 @@
 export const projects = [
   {
+    image: "dopp.png",
+    title: "Crowdfunding Dapp",
+    skills: ["Solidity", "Thirdweb", "TypeScript", "Tailwindcss", "Nextjs"],
+    url: {
+      label: "dopp.vercel.app",
+      link: "https://dopp.vercel.app/",
+    },
+    description: [
+      "Designed and Developed this Dapp where user can raise or donate funds to different campaigns of their choice. Payments are done in Goerli Ether.",
+    ],
+  },
+  {
     image: "openriver.png",
     title: "OpenRiver",
     skills: ["Nextjs", "Thirdweb", "Moralis"],
