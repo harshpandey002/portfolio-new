@@ -43,7 +43,7 @@ export default function Header() {
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href="/" scroll={false}>
-              <img src="signature.png" alt="Logo" />
+              <img src="../signature.png" alt="Logo" />
             </Link>
           </div>
           <ul className={styles.links}>
