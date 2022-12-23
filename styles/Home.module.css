@@ -68,7 +68,7 @@
   color: #eaeaea;
 }
 
-.featured p {
+.featured > p {
   color: #b1b1b1;
   font-size: 16px;
   margin-top: 16px;
