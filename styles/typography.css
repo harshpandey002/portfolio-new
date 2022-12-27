@@ -77,7 +77,8 @@ li p {
 }
 
 .content strong {
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  color: white;
 }
 
 .content h2 {
@@ -176,9 +177,9 @@ li p {
 .content table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  background-color: #ffffff;
+  margin-bottom: 2rem;
+  /* border: 1px solid #ddd; */
+  background-color: transparent;
 }
 .content table > :not(:first-child) {
   border-top: 2px solid #ddd;
@@ -197,54 +198,62 @@ li p {
   padding: 0.6rem 1.2rem;
   vertical-align: top;
   margin-bottom: 0;
-  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #232323;
+  border-left: 1px solid #232323;
 }
-.content tr:not(:last-child) {
-  border-bottom: 1px solid #ddd;
+
+.content table td:first-child,
+.content table th:first-child {
+  border-left: none;
 }
+.content table tr:last-child td {
+  border-bottom: none;
+}
+
 .content th {
   font-weight: 600;
+  text-align: start;
 }
 .content thead {
   margin-bottom: 0;
 }
-.content thead tr {
-  border-bottom: 1px solid #ddd;
+.content td {
+  color: #c4c4c4;
 }
+
 .content tbody {
-  background: white;
+  background: transparent;
   margin-bottom: 0;
 }
 .content blockquote {
   padding: 30px;
-  padding-left: 80px;
+  padding-left: 60px;
   margin: 40px 0;
   line-height: 2;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #39548022;
   position: relative;
-  color: #152035;
 }
 @media (max-width: 575px) {
   .content blockquote {
     padding-left: 30px;
-    padding-top: 80px;
   }
 }
 .content blockquote p {
   margin-bottom: 0 !important;
-  font-size: 24px;
-  font-family: "Crete Round", serif;
+  font-size: 16px;
 }
 
 .content blockquote p::before {
-  content: "“";
-  color: #ef8677;
+  /* content: "“"; 
   font-family: "Crete Round", serif;
-  font-size: 100px;
-  line-height: 0;
-  left: 30px;
-  top: 75px;
+  font-size: 100px; */
+  content: "";
+  height: 100%;
+  width: 4px;
+  background-color: rgb(18, 101, 165);
   position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .content blockquote cite {

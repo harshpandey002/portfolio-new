@@ -36,12 +36,14 @@ export default function BlogDetail({ frontmatter, content }) {
             tags.map((tag) => <motion.li variants={item}>{tag}</motion.li>)
           )}
         </motion.ul>
-        <motion.img
-          variants={cards}
-          id={styles.blogImg}
-          src={image}
-          alt={title}
-        />
+        {image && (
+          <motion.img
+            variants={cards}
+            id={styles.blogImg}
+            src={image}
+            alt={title}
+          />
+        )}
         <motion.div
           variants={cards}
           className="content"
