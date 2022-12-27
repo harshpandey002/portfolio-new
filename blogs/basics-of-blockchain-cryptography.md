@@ -1,17 +1,17 @@
 ---
-title: "Basics of Blockchain"
-slug: "basics-of-blockchain"
+title: "Basics of Blockchain and Cryptography"
+slug: "basics-of-blockchain-cryptography"
 description: "Learn the cryptography fundamentals. What are hash functions? How are they important to blockchains? What exactly is Mining and Proof of work? What makes blockchains work?"
 image: ""
 squareImage: "../bitcoinIcon.png"
-date: ""
-tags: ["Blockchain", "Crypto"]
+date: "Dec 28, 2022"
+tags: ["Blockchain", "Cryptography"]
 isLive: false
 ---
 
 ## 👋 Welcome
 
-Hi, I'm [Harsh Pandey](https://harshkumarpandey.com). This blog post was initially intended to be just note thing for me, but later I thought, why not post this as blog for other peeps to learns as well.
+Hi, I'm [Harsh Pandey](https://harshkumarpandey.com). This blog post was initially intended to be just note thing for me, but later I thought, why not post this as blog for other peeps to learns as **well**.
 
 In this blog we'll be covering the very basics of blockchain, mostly the theory part of it. This will help with the interview for getting a job in web3 space.
 
