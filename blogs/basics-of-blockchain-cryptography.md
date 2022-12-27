@@ -408,11 +408,9 @@ You can think of Proof of Work as the **security of the Bitcoin system**. Thousa
 
 In order to overpower this network and force your own version of the truth, you would need to come up with more computing power than all the nodes in the entire system. This is referred to as a **51% attack** because you need to have 51% of the total hashing power in the network.
 
-![Mining Image](https://cdn.dribbble.com/users/1498581/screenshots/4127416/cryptocurrency_mining_mov.gif)
-
 Go to this link: [https://blockchaindemo.io/](https://blockchaindemo.io/). Feel free to go through this excellent demo by yourself.
 
-## 🔗 Let's also build a blockhain
+## 🔗 Let's build a blockhain
 
 Let's see some theory behind blockchain before creating one.
 
