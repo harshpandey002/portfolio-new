@@ -11,7 +11,7 @@ isLive: true
 
 ## 👋 Welcome
 
-Hi, I'm [Harsh Pandey](https://harshkumarpandey.com). This blog post was initially intended to be just note thing for me, but later I thought, why not post this as blog for other peeps to learns as **well**.
+Hi, I'm [Harsh Pandey](https://harshkumarpandey.com). This blog post was initially intended to be just note thing for me, but later I thought, why not post this as blog for other peeps to learns as well.
 
 In this blog we'll be covering the very basics of blockchain, mostly the theory part of it. This will help with the interview for getting a job in web3 space.
 
