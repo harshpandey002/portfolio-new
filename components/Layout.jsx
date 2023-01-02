@@ -12,7 +12,7 @@ export default function Layout({ title, description, children }) {
         <meta name="description" content={description} />
         <meta
           property="og:image"
-          content="https://www.harshkumarpandey.com/about.png"
+          content="https://www.harshkumarpandey.com/about.webp"
         />
 
         <link
