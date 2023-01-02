@@ -157,8 +157,8 @@ export default function Home({ blogs }) {
         >
           <h2>Recent Blogs</h2>
           <p>
-            I like to help other developers too as I dive deep into blockchain
-            technologies.
+            As I delve deeply into blockchain technology, I also like to assist
+            other developers.
           </p>
           <div className={styles.projects}>
             {React.Children.toArray(
