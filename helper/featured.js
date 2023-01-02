@@ -1,5 +1,12 @@
 export const featured = [
   {
+    image: "doppIcon.png",
+    title: "Crowdfunding Dapp",
+    description:
+      "Designed and Developed this Dapp where user can raise or donate funds to different campaigns of their choice. Payments are done in Goerli Ether.",
+    link: "https://dopp.vercel.app/",
+  },
+  {
     image: "blocktrainIcon.png",
     title: "BlockTrain",
     description:

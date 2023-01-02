@@ -7,7 +7,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import Layout from "../components/Layout";
-import { open } from "@/helper/util";
+import { open, sortByDate } from "@/helper/util";
 
 import { motion } from "framer-motion";
 
@@ -16,8 +16,13 @@ import ProjectCard from "@/components/ProjectCard";
 import { fadeIn, hr, item, noStagger, stagger } from "helper/animate";
 import { FaLinkedinIn } from "react-icons/fa";
 import { featured } from "helper/featured";
+import BlogCard from "@/components/BlogCard";
+import React from "react";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 
-export default function Home() {
+export default function Home({ blogs }) {
   return (
     <Layout title="Harsh Pandey – Full-Stack Blockchain Developer">
       <div className={styles.homeContainer}>
@@ -141,7 +146,58 @@ export default function Home() {
             ))}
           </div>
         </motion.div>
+
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className={styles.featured}
+          style={{ marginTop: "5rem" }}
+        >
+          <h2>Recent Blogs</h2>
+          <p>
+            I like to help other developers too as I dive deep into blockchain
+            technologies.
+          </p>
+          <div className={styles.projects}>
+            {React.Children.toArray(
+              blogs.map((blog) => <BlogCard blog={blog} />)
+            )}
+          </div>
+        </motion.div>
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("blogs"));
+
+  let blogs = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("blogs", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      ...frontmatter,
+    };
+  });
+
+  blogs.sort(sortByDate);
+
+  const published = [];
+
+  blogs.forEach((blog) => {
+    if (blog.isLive) published.push(blog);
+  });
+
+  return {
+    props: {
+      blogs: published.slice(0, 3),
+    },
+  };
 }
