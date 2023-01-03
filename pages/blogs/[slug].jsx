@@ -22,7 +22,7 @@ export default function BlogDetail({ frontmatter, content }) {
     <Layout
       title={`${title} — Harsh Pandey`}
       description={description}
-      image={image}
+      // image={image}
     >
       <motion.div
         key="BlogDetail"
