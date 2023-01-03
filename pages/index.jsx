@@ -44,7 +44,7 @@ export default function Home({ blogs }) {
             <AnimatedText>
               I’m Harsh Pandey, an India based Full-Stack blockchain developer
               with over two years of development experience with Reactjs/Nextjs.
-              I specialise in developing responsive user interfaces for
+              I specialize in developing responsive user interfaces for
               web-based applications with a focus on secure and smooth user
               experience.
             </AnimatedText>
