@@ -5,17 +5,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Header from "./Header";
 
-export default function Layout({ title, description, children }) {
+export default function Layout({ title, description, image, children }) {
   return (
     <motion.div>
       <Head>
         <title>{title}</title>
         <meta name="title" content={title} />
         <meta name="description" content={description} />
-        <meta
-          property="og:image"
-          content="https://www.harshkumarpandey.com/about.webp"
-        />
+        <meta property="og:image" content={image} />
 
         <link
           rel="apple-touch-icon"
@@ -106,4 +103,5 @@ export default function Layout({ title, description, children }) {
 Layout.defaultProps = {
   title: "Harsh Kumar Pandey",
   description: "UI/UX Designer and Full Stack Blockchain Developer.",
+  image: "https://www.harshkumarpandey.com/about.webp",
 };
