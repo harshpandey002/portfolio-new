@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import { cards, item, noStagger, stagger } from "@/helper/animate";
-import styles from "@/styles/Home.module.css";
-import { motion } from "framer-motion";
-import fs from "fs";
-import matter from "gray-matter";
-import { md, readTime, sanitize } from "helper/markdownIt";
-import path from "path";
 import React from "react";
+import Layout from "@/components/Layout";
+import AnimatedText from "@/components/AnimatedText";
+
+import { motion } from "framer-motion";
+import { md, readTime, sanitize } from "helper/markdownIt";
+import { cards, item, noStagger, stagger } from "@/helper/animate";
+
+import matter from "gray-matter";
+import fs from "fs";
+import path from "path";
+
+import styles from "@/styles/Home.module.css";
 
 export default function BlogDetail({ frontmatter, content }) {
   const { image, title, date, description, tags } = frontmatter;
@@ -16,7 +19,11 @@ export default function BlogDetail({ frontmatter, content }) {
   const detail = `${readTime(content)} min read | ${date}`;
 
   return (
-    <Layout>
+    <Layout
+      title={`${title} — Harsh Pandey`}
+      description={description}
+      image={image}
+    >
       <motion.div
         key="BlogDetail"
         initial="hidden"
