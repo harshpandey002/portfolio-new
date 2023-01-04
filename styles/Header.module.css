@@ -75,6 +75,13 @@
   display: none;
 }
 
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 @media only screen and (max-width: 800px) {
   .container {
     position: fixed;
@@ -91,7 +98,7 @@
   }
 
   .clip {
-    clip-path: circle(80% at 83% 85%);
+    clip-path: circle(83% at 83% 85%);
   }
 
   .menu {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Slant as Hamburger } from "hamburger-react";
+import { BsDownload } from "react-icons/bs";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,6 +27,10 @@ export default function Header() {
       router.events.off("routeChangeStart", handleRouteChange);
     };
   }, []);
+
+  const handleResume = () => {
+    window.open("Resume.pdf", "_blank");
+  };
 
   return (
     <>
@@ -61,6 +66,9 @@ export default function Header() {
             <Link href="/about" scroll={false}>
               <li className={isActive("/about") ? styles.active : ""}>About</li>
             </Link>
+            <li onClick={handleResume} className={styles.resume}>
+              Resume <BsDownload />
+            </li>
           </ul>
         </nav>
       </div>
