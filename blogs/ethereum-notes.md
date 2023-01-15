@@ -9,6 +9,10 @@ tags: ["Ethereum", "Transaction", "Gas", "JSON-RPC"]
 isLive: true
 ---
 
+## 👁️ Prerequisite
+
+I recommend reading [basics of blockchain and cryptography](https://www.harshkumarpandey.com/blogs/basics-of-blockchain-cryptography) before starting with this.
+
 ## 🧾 Proof of Stake
 
 On September 15th, 2022 Ethereum transitioned from Proof of Work to Proof of Stake (POS), also known as “The Merge”.
@@ -131,3 +135,9 @@ JSON-RPC Flow:
 Your web3 wallet, acting as a provider, will route the Request to the Ethereum node
 
 > Remember, `provider` is just a fancy term for something representing a connection to an Ethereum node!
+
+## 🍾 And we are done.
+
+Save this for future reference, this will be super helpful if you are preparing for job interviews.
+
+Huge shoutout to [Alchemy University](https://university.alchemy.com/), Most of the things in this blog is just copy past from their modules/sub-modules.
