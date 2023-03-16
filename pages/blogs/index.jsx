@@ -81,15 +81,15 @@ export async function getStaticProps() {
 
   blogs.sort(sortByDate);
 
-  const unpublished = [];
-  const published = [];
+  // const unpublished = [];
+  // const published = [];
 
-  blogs.forEach((blog) => {
-    if (blog.isLive) published.push(blog);
-    else unpublished.push(blog);
-  });
+  // blogs.forEach((blog) => {
+  //   if (blog.isLive) published.push(blog);
+  //   else unpublished.push(blog);
+  // });
 
-  blogs = [...published, ...unpublished];
+  // blogs = [...published, ...unpublished];
 
   return {
     props: {
