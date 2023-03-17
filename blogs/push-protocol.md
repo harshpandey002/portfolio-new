@@ -2,7 +2,7 @@
 title: "Introduction to PUSH Protocol"
 slug: "push-protocol"
 description: "Send notifications to wallets through Smart Contract, dApp, or Backend service. Decentralized communication & notification protocol for Web3."
-image: "https://i.imgur.com/84pEGOG.png"
+image: "https://i.imgur.com/mToWEGF.png"
 squareImage: "../pushIcon.png"
 date: "Mar 17, 2023"
 tags: ["PUSH Protocol", "Notification", "Reactjs"]
@@ -11,227 +11,110 @@ isLive: false
 
 ## 👋 Welcome
 
-Hi Devs, My name is Harsh Pandey and in this blogs we will see how easily you can handle Wallets with the help of thirdweb SDK.
+Hi Devs, My name is Harsh Pandey and we'll be looking how you send cross-chain notifications to wallets and render them in your dApps.
 
 ## 👀 Prerequisites
 
-In order to understand exactly how thirdweb is simplifying wallets, you first need to know manual method of handling wallets. In case you don't know that. you can refer to my other blog [Get Started with Solidity, Hardhat and Etherjs](https://www.harshkumarpandey.com/blogs/get-started-with-solidity-hardhat-and-etherjs) and go to the section **Connecting to Wallet and handling events**.
+To understand the concepts deiscussed in this blog, you need basic understanding of:
 
-You also need to know concepts of react and hooks.
+- Smart Contracts
+- Solidity
+- YouTube 😶‍🌫️
+- JavaScript 🤷‍♂️
 
-## ⚒️ Setup
+## 🔔 PUSH Protocol
 
-After
+- **Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services.**
 
-```
-npx create-react-app thirdweb-wallet
-```
+- Using the protocol, any smart contract, dApp, or backend service can send on-chain or off-chain notifications tied to the wallet addresses of users in a gasless, multichain, open, and platform-agnostic way.
 
-OR
+- Being an open communication middleware, notifications can be integrated and shown on any crypto wallet, mobile app, browser extension, or dApps enabling a native communication layer for Web3.0
 
-```
-npx create-next-app thirdweb-wallet
-```
+_In this blog, we'll go through how you can send notifications from smart contracts, or from client-side(reactjs)_
 
-Install dependencies
+## Knowledge Dump
 
-```
-npm install @thirdweb-dev/react @thirdweb-dev/sdk ethers
-```
+### **Channels**
 
-Then wrap your application in the ThirdwebProvider to get started!
+- Any user who activates themselves as a service on the protocol to send notifications for its users can be considered a Channel.
 
-```jsx
-import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
+- The creation of a channel is just a one-time simple procedure. It must be noted that channel creation only happens on the Ethereum blockchain and one wallet address can only create one channel only the protocol.
 
-const desiredChainId = ChainId.Mumbai;
+- Think of it as a YouTube channel.
+  1. You create a Channel.
+  2. You send notifications to subscribers.
 
-  // If you want to use any custom provider or signer, add it here. (Optional)
-  const myProvider = ...;
-  const mySigner = ...;
-  const rpcUrl = ...;
+### **Channel Owners**
 
-export const MyApp = () => {
-  return (
-    <ThirdwebProvider
-        desiredChainId={desiredChainId}
-        signer={mySigner}
-        provider={myProvider}
-        chainRpc={{
-        1: rpcUrl,
-      }}
-    >
-      {/* Your App Goes Here */}
-    </ThirdwebProvider>
-  );
-};
-```
+- You create a channel, you're the channel owner. You can now send notification to channel subscribers.
 
-Now you can use any hook by thirdweb in your components.
+### **Delegates**
 
-If you `console.log(ChainId)`, you will find
+- Delegates are additional wallets that the channel Owners have authorised to send notifications on the channels behalf.
 
-```json
-{
-  "1": "Mainnet",
-  "5": "Goerli",
-  "10": "Optimism",
-  "56": "BinanceSmartChainMainnet",
-  "97": "BinanceSmartChainTestnet",
-  "137": "Polygon",
-  "250": "Fantom",
-  "420": "OptimismGoerli",
-  "1337": "Localhost",
-  "4002": "FantomTestnet",
-  "31337": "Hardhat",
-  "42161": "Arbitrum",
-  "43113": "AvalancheFujiTestnet",
-  "43114": "Avalanche",
-  "80001": "Mumbai",
-  "421613": "ArbitrumGoerli",
-  "1666600000": "Harmony",
-  "Mainnet": 1,
-  "Goerli": 5,
-  "Polygon": 137,
-  "Mumbai": 80001,
-  "Harmony": 1666600000,
-  "Localhost": 1337,
-  "Hardhat": 31337,
-  "Fantom": 250,
-  "FantomTestnet": 4002,
-  "Avalanche": 43114,
-  "AvalancheFujiTestnet": 43113,
-  "Optimism": 10,
-  "OptimismGoerli": 420,
-  "Arbitrum": 42161,
-  "ArbitrumGoerli": 421613,
-  "BinanceSmartChainMainnet": 56,
-  "BinanceSmartChainTestnet": 97
-}
-```
+### Types of Notifications
 
-We are setting `Mumbai` network as our desired chain.
+1. **Broadcast Notifications**: This type of notification is basically broadcasted or sent to all the subscribers of a channel at once.
 
-## 👆 Button Component by Thirdweb
+2. **Targeted Notifications**: As the name suggests, this type of notification allows channel owners to notify a specific wallet address.
 
-The Connect Wallet button allows the user to connect to your application with the most popular wallets, such as MetaMask, Coinbase, or WalletConnect.
+3. **Subset Notifications**: Subset notifications are quite helpful when a particular group of subscribers of a channel is supposed to be notified.
 
-```jsx
-import { ConnectWallet } from "@thirdweb-dev/react";
+4. **Secret Notifications**: Notifications that are encrypted before sending using asymmetric encryption, i.e., the public key to encrypt and the private key to decrypt.
 
-export default function Home() {
-  return (
-    <div>
-      <ConnectWallet />
-    </div>
-  );
-}
-```
+> **Sending notifications is a gasless transaction** and therefore notification senders need not pay any gas fee while sending notifications **via the Dapp**.
 
-There are 3 props you can pass to this button like `accentColor`, `colorMode` and `auth`. Learn more about them in the [docs](https://portal.thirdweb.com/ui-components/connectwalletbutton#props)
+> **Gas Fees are only applicable** when on-chain notifications are **triggered directly from smart contracts**.
 
-Just by code above, you will get this button.
+## Sending Notification from PUSH Dapp
 
-![Before Connect](https://i.imgur.com/CTdt9SB.png)
+1. Go to [app.push.org](https://app.push.org/) or [staging.push.org](https://staging.push.org/)(Goerli)
+2. Connect your wallet.
 
-And once you connect to a wallet.
+You'll be redirected to the dashboard.
+![dashboard](https://i.imgur.com/r3wukQ8.png)
 
-![After Connect](https://i.imgur.com/ruUiQ65.png)
+All the channels are listed here. See that **Opt-in** button? that's how you can subscribe to a channel. And the address of the owner is there too beside number of subscribers.
 
-Notice how Chain Symbol, Balance, address, and Wallet Icons is automatically displayed and the UI is so cool🔥.
+3. Click **Create Channel** button on the side bar.
+4. Fill out channel information and logo.
+5. You'll also be asked to stake 50 PUSH tokens. If you are on staging env, you can get testnet PUSH there itself.
 
-![After Connect](https://i.imgur.com/nLEscBE.png)
+![Stake PUSH](https://i.imgur.com/hkJWShV.png)
 
-If you wish to switch to another network, you will be prompted automatically to add the missing network to your wallet and switch once added.
+6. Create Channel. You'll be redirected to channel dashboard where you can edit channel details and add delegates.
 
-Remember how we did this manually earlier?
+![Channel Dashboard](https://i.imgur.com/XZsUUQp.png)
 
-## 💰 Individual Wallets
+7. Once channel is created, you'll see the **Send Notification** tab.
 
-What if you want custom button and handle the events manually.
+![Send Notification](https://i.imgur.com/dFkCTwr.png)
 
-```jsx
-import {
-  useMetamask,
-  useWalletConnect,
-  useCoinbaseWallet,
-  useDisconnect,
-} from "@thirdweb-dev/react";
+8. Play around to see how you can send different types of notification.
 
-const Home = () => {
-  const connectWithMetamask = useMetamask();
-  const connectWithWalletConnect = useWalletConnect();
-  const connectWithCoinbaseWallet = useCoinbaseWallet();
+![Setup](https://i.imgur.com/3dnjCgy.png)
 
-  const disconnect = useDisconnect();
+I'm gonna send a notification to my other wallet(right side). First I'll Opt-in to the dev pool channel. Opt-in requires you to verify your wallet through signature.
 
-  return (
-    <div>
-      <button onClick={connectWithMetamask}>Connect Metamask</button>
-      <button onClick={connectWithWalletConnect}>Connect WalletConnect</button>
-      <button onClick={connectWithCoinbaseWallet}>
-        Connect Coinbase Wallet
-      </button>
-      <button onClick={disconnect}>Disconnect</button>
-    </div>
-  );
-};
-```
+![Test message](https://i.imgur.com/u7wKee0.png)
 
-Code above is self explanatory.
+On the left, I'm sending a targeted message, you can see the notification preview before hitting **Send Notification** at the bottom.
+On the right, I've my inbox for receiver wallet.
 
-## 🌐 Network Connection
+After hitting send, refresh the inbox tab on the receiver side.
 
-Now that you're connect to wallet of your choice, let's see how you can access connected chain id, connected address and add/switch network if needed.
+![Notification](https://i.imgur.com/bTiwpVv.png)
 
-```jsx
-import {
-  useChainId,
-  useNetwork,
-  ChainId,
-  useAddress,
-  useNetworkMistmatch,
-} from "@thirdweb-dev/react";
+> Delagates can send notification on the behalf of channel.
 
-const App = () => {
-  // This will return chainId of connected network.
-  const chainId = useChainId();
-  const address = useAddress();
+## Sending Notification from your Dapp
 
-  // This function will prompt you to add network to wallet and then switch in case of missing network.
-  const [, switchNetwork] = useNetwork();
+That was easy, isn't it?
 
-  // This will return true if connected chainId is different from desiredChainId you passed to <ThirdwebProvider> earlier.
-  const isMismatch = useNetworkMistmatch();
+Here's the video by PUSH team explaining what we just did and also how to achieve same from our dApp.
 
-  return (
-    <div>
-      <p>{chainId}</p>
-      <p>{ChainId[`0x${chainId}`]}</p>
-      <p>{address}</p>
-      <p>{JSON.stringify(isMismatch)}</p>
+/i/https://www.youtube.com/embed/BsxxQj6__RI
 
-      <button onClick={() => switchNetwork(ChainId.Polygon)}>
-        Switch Network
-      </button>
-    </div>
-  );
-};
-```
+## Receive Notification in your Dapp
 
-In the code above
-
-```js
-console.log(chainId); // 8001
-console.log(ChainId[`0x${chainId}`]); // Mumbai
-```
-
-## 🤩 You've done it
-
-Probably you will be using thirdweb for handling wallets in almost all your projects.
-
-See the button in action in my most recent project [OpenRiver](https://openriver-thirdweb.vercel.app/), a NFT Marketplace developed using Thirdweb pre-built contracts and Moralis web3 API with no Backend or Baas.
-
-Will write a blog soon on that, so stay tuned.
-
-Follow me on [LinkedIn](https://www.linkedin.com/in/harshpandey002/) and [Twitter](https://twitter.com/harshpandey002).
+## Sending Notification from Smart Contract
