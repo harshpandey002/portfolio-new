@@ -166,14 +166,14 @@ li p {
   left: 7px;
   top: 16px;
 }
-.content ul li::before {
+/* .content ul li::before {
   height: 12px;
   width: 12px;
   background: #212121f9;
   filter: blur(1px);
   left: 3px;
   top: 12px;
-}
+} */
 .content table {
   width: 100%;
   max-width: 100%;
