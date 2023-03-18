@@ -110,6 +110,13 @@ li p {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
+.content iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 .content figure img {
   margin-bottom: 10px;
 }
