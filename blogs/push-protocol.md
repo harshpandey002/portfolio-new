@@ -107,14 +107,12 @@ After hitting send, refresh the inbox tab on the receiver side.
 
 > Delagates can send notification on the behalf of channel.
 
-## Sending Notification from your Dapp
+## Send/Receice Notification from Dapp
 
-That was easy, isn't it?
+That was easy, wasn't it?
 
 Here's the video by PUSH team explaining what we just did and also how to achieve same from our dApp.
 
 /i/https://www.youtube.com/embed/BsxxQj6__RI
-
-## Receive Notification in your Dapp
 
 ## Sending Notification from Smart Contract
