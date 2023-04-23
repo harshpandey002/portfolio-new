@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "@/styles/Layout.module.css";
-import { motion } from "framer-motion";
-import Head from "next/head";
-import Link from "next/link";
-import Header from "./Header";
+import styles from '@/styles/Layout.module.css';
+import { motion } from 'framer-motion';
+import Head from 'next/head';
+import Link from 'next/link';
+import Header from './Header';
 
 export default function Layout({ title, description, image, children }) {
   return (
@@ -93,7 +93,7 @@ export default function Layout({ title, description, image, children }) {
       <div className={styles.children}>{children}</div>
       <motion.div exit={{ opacity: 0 }} className={styles.footer}>
         <Link href="/" scroll={false}>
-          <img src="../signature.png" alt="Logo" />
+          <img src="../harshpandey.png" alt="Logo" />
         </Link>
       </motion.div>
     </motion.div>
@@ -101,7 +101,7 @@ export default function Layout({ title, description, image, children }) {
 }
 
 Layout.defaultProps = {
-  title: "Harsh Kumar Pandey",
-  description: "UI/UX Designer and Full Stack Blockchain Developer.",
-  image: "https://www.harshkumarpandey.com/about.webp",
+  title: 'Harsh Kumar Pandey',
+  description: 'UI/UX Designer and Full Stack Blockchain Developer.',
+  image: 'https://www.harshkumarpandey.com/about.webp',
 };

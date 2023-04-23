@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "@/styles/Header.module.css";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { Slant as Hamburger } from "hamburger-react";
-import { BsDownload } from "react-icons/bs";
+import styles from '@/styles/Header.module.css';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { Slant as Hamburger } from 'hamburger-react';
+import { BsDownload } from 'react-icons/bs';
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,15 +21,15 @@ export default function Header() {
       });
     };
 
-    router.events.on("routeChangeStart", handleRouteChange);
+    router.events.on('routeChangeStart', handleRouteChange);
 
     return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
+      router.events.off('routeChangeStart', handleRouteChange);
     };
   }, []);
 
   const handleResume = () => {
-    window.open("Resume.pdf", "_blank");
+    window.open('Resume.pdf', '_blank');
   };
 
   return (
@@ -44,27 +44,27 @@ export default function Header() {
         />
       </span>
       <div className={styles.gradient} />
-      <div className={`${styles.container} ${showMenu ? styles.clip : ""}`}>
+      <div className={`${styles.container} ${showMenu ? styles.clip : ''}`}>
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href="/" scroll={false}>
-              <img src="../signature.png" alt="Logo" />
+              <img src="../harshpandey.png" alt="Logo" />
             </Link>
           </div>
           <ul className={styles.links}>
             <Link href="/" scroll={false}>
-              <li className={isActive("/") ? styles.active : ""}>Home</li>
+              <li className={isActive('/') ? styles.active : ''}>Home</li>
             </Link>
             <Link href="/blogs" scroll={false}>
-              <li className={isActive("/blogs") ? styles.active : ""}>Blogs</li>
+              <li className={isActive('/blogs') ? styles.active : ''}>Blogs</li>
             </Link>
             <Link href="/projects" scroll={false}>
-              <li className={isActive("/projects") ? styles.active : ""}>
+              <li className={isActive('/projects') ? styles.active : ''}>
                 Projects
               </li>
             </Link>
             <Link href="/about" scroll={false}>
-              <li className={isActive("/about") ? styles.active : ""}>About</li>
+              <li className={isActive('/about') ? styles.active : ''}>About</li>
             </Link>
             <li onClick={handleResume} className={styles.resume}>
               Resume <BsDownload />
