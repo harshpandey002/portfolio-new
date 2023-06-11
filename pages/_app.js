@@ -1,15 +1,15 @@
-import { AnimatePresence } from "framer-motion";
-import Script from "next/script";
-import "@/styles/globals.css";
-import "@/styles/typography.css";
-import "@/styles/code.css";
+import { AnimatePresence } from 'framer-motion';
+import Script from 'next/script';
+import '@/styles/globals.css';
+import '@/styles/typography.css';
+import '@/styles/code.css';
+import News from '@/components/News';
 
 function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence
       exitBeforeEnter
-      onExitComplete={() => window.scrollTo(0, 0)}
-    >
+      onExitComplete={() => window.scrollTo(0, 0)}>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, router }) {
         });
     `}
       </Script>
-
+      <News />
       <Component {...pageProps} key={router.route} />
     </AnimatePresence>
   );

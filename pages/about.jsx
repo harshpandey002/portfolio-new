@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import styles from "@/styles/Home.module.css";
-import { motion } from "framer-motion";
-import { fadeIn, hr, image, noStagger, stagger } from "helper/animate";
-import { work } from "helper/work";
+import AnimatedText from '@/components/AnimatedText';
+import Layout from '@/components/Layout';
+import styles from '@/styles/Home.module.css';
+import { motion } from 'framer-motion';
+import { fadeIn, hr, image, noStagger, stagger } from 'helper/animate';
+import { work } from 'helper/work';
 
 export default function About() {
   return (
@@ -15,8 +15,7 @@ export default function About() {
         animate="visible"
         exit="exit"
         variants={stagger}
-        className={styles.container}
-      >
+        className={styles.container}>
         <div id={styles.me}>
           <motion.img
             initial="hidden"
@@ -31,9 +30,9 @@ export default function About() {
           <p>
             <AnimatedText>
               I’m Harsh Pandey, an India based Full-Stack blockchain developer
-              with over two years of development experience. I specialise in
-              developing responsive user interfaces for web-based applications
-              with a focus on secure and smooth user experience.
+              with over two & half years of development experience. I specialise
+              in developing responsive user interfaces for web-based
+              applications with a focus on secure and smooth user experience.
             </AnimatedText>
           </p>
           <p>
@@ -106,44 +105,41 @@ export default function About() {
           <p id={styles.sponsor}>In case you were wondering, this site is</p>
           <ul id={styles.about}>
             <li>
-              Designed by{" "}
+              Designed by{' '}
               <a
                 href="https://dribbble.com/daleanthony"
                 rel="noreferrer"
-                target="_blank"
-              >
+                target="_blank">
                 Dale Anthony
               </a>
               .
             </li>
             <li>
-              Developed by me using{" "}
+              Developed by me using{' '}
               <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
                 Nextjs
               </a>
               .
             </li>
             <li>
-              Animated using{" "}
+              Animated using{' '}
               <a
                 href="https://www.framer.com/motion/"
                 rel="noreferrer"
-                target="_blank"
-              >
+                target="_blank">
                 Framer Motion
               </a>
               .
             </li>
             <li>
-              Hosted by{" "}
+              Hosted by{' '}
               <a
                 href="https://www.hostinger.in/"
                 rel="noreferrer"
-                target="_blank"
-              >
+                target="_blank">
                 Hostinger
-              </a>{" "}
-              with deployement via{" "}
+              </a>{' '}
+              with deployement via{' '}
               <a href="https://vercel.com/" rel="noreferrer" target="_blank">
                 Vercel
               </a>
@@ -180,9 +176,9 @@ function Work({ data }) {
   return (
     <div className={styles.row}>
       <p className={styles.org}>
-        {title}{" "}
+        {title}{' '}
         <span id={styles.freelance}>
-          {isFreelance ? "(Freelance)" : "(Full-time)"}
+          {isFreelance ? '(Freelance)' : '(Full-time)'}
         </span>
       </p>
       <span className={styles.details}>

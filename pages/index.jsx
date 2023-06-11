@@ -1,26 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "@/styles/Home.module.css";
+import styles from '@/styles/Home.module.css';
 import {
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineTwitter,
   AiFillMail,
-} from "react-icons/ai";
-import Layout from "../components/Layout";
-import { open, sortByDate } from "@/helper/util";
+} from 'react-icons/ai';
+import Layout from '../components/Layout';
+import { open, sortByDate } from '@/helper/util';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import AnimatedText from "@/components/AnimatedText";
-import ProjectCard from "@/components/ProjectCard";
-import { fadeIn, hr, item, noStagger, stagger } from "helper/animate";
-import { FaLinkedinIn } from "react-icons/fa";
-import { featured } from "helper/featured";
-import BlogCard from "@/components/BlogCard";
-import React from "react";
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
+import AnimatedText from '@/components/AnimatedText';
+import ProjectCard from '@/components/ProjectCard';
+import { fadeIn, hr, item, noStagger, stagger } from 'helper/animate';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { featured } from 'helper/featured';
+import BlogCard from '@/components/BlogCard';
+import React from 'react';
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
 
 export default function Home({ blogs }) {
   return (
@@ -32,9 +32,8 @@ export default function Home({ blogs }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          variants={stagger}
-        >
-          <h1 style={{ marginBottom: "4rem" }}>
+          variants={stagger}>
+          <h1 style={{ marginBottom: '4rem' }}>
             <AnimatedText>
               UI/UX. Full-Stack. Blockchain. Freelance.
             </AnimatedText>
@@ -43,10 +42,10 @@ export default function Home({ blogs }) {
           <motion.p variants={noStagger}>
             <AnimatedText>
               I’m Harsh Pandey, an India based Full-Stack blockchain developer
-              with over two years of development experience with Reactjs/Nextjs.
-              I specialize in developing responsive user interfaces for
-              web-based applications with a focus on secure and smooth user
-              experience.
+              with over two & half years of development experience with
+              Reactjs/Nextjs. I specialize in developing responsive user
+              interfaces for web-based applications with a focus on secure and
+              smooth user experience.
             </AnimatedText>
           </motion.p>
           <motion.p id={styles.desc} variants={noStagger}>
@@ -61,60 +60,54 @@ export default function Home({ blogs }) {
           <motion.div variants={stagger} className={styles.socials}>
             <span className="outerSpan">
               <motion.span
-                onClick={() => open("https://twitter.com/harshpandey002")}
+                onClick={() => open('https://twitter.com/harshpandey002')}
                 variants={item}
-                className="innerSpan"
-              >
+                className="innerSpan">
                 <AiOutlineTwitter className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
               <motion.span
                 onClick={() =>
-                  open("https://www.instagram.com/harshpandey_002/")
+                  open('https://www.instagram.com/harshpandey_002/')
                 }
                 variants={item}
-                className="innerSpan"
-              >
+                className="innerSpan">
                 <AiOutlineInstagram className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
               <motion.span
-                onClick={() => open("https://github.com/harshpandey002")}
+                onClick={() => open('https://github.com/harshpandey002')}
                 variants={item}
-                className="innerSpan"
-              >
+                className="innerSpan">
                 <AiFillGithub className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
               <motion.span
                 onClick={() =>
-                  open("https://www.linkedin.com/in/harshpandey002")
+                  open('https://www.linkedin.com/in/harshpandey002')
                 }
                 variants={item}
-                className="innerSpan"
-              >
+                className="innerSpan">
                 <FaLinkedinIn className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
               <motion.span
-                onClick={() => open("mailto:coding.harshp@gmail.com")}
+                onClick={() => open('mailto:coding.harshp@gmail.com')}
                 variants={item}
                 className="innerSpan"
-                id={styles.emailIcon}
-              >
+                id={styles.emailIcon}>
                 <AiFillMail className={styles.icon} />
               </motion.span>
             </span>
             <span className="outerSpan">
               <motion.button
-                onClick={() => open("mailto:coding.harshp@gmail.com")}
+                onClick={() => open('mailto:coding.harshp@gmail.com')}
                 variants={item}
-                id={styles.emailBtn}
-              >
+                id={styles.emailBtn}>
                 Email me
               </motion.button>
             </span>
@@ -134,8 +127,7 @@ export default function Home({ blogs }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className={styles.featured}
-        >
+          className={styles.featured}>
           <h2>Featured Projects</h2>
           <p>
             A collection of some side projects that I have shipped recently.
@@ -153,8 +145,7 @@ export default function Home({ blogs }) {
           animate="visible"
           exit="exit"
           className={styles.featured}
-          style={{ marginTop: "5rem" }}
-        >
+          style={{ marginTop: '5rem' }}>
           <h2>Recent Blogs</h2>
           <p>
             As I delve deeply into blockchain technology, I also like to assist
@@ -172,12 +163,12 @@ export default function Home({ blogs }) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("blogs"));
+  const files = fs.readdirSync(path.join('blogs'));
 
   let blogs = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("blogs", filename),
-      "utf-8"
+      path.join('blogs', filename),
+      'utf-8'
     );
 
     const { data: frontmatter } = matter(markdownWithMeta);
