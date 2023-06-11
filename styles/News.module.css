@@ -1,0 +1,28 @@
+.container {
+  max-width: 280px;
+  background-color: #121c2dce;
+  border: 2px solid #4f71ad;
+  backdrop-filter: blur(4px);
+
+  border-radius: 8px;
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1rem;
+}
+
+.container p {
+  /* text-align: center; */
+  color: white;
+  font-size: 16px;
+  z-index: 100;
+}
+
+@media (width < 800px) {
+  .container {
+    bottom: 7em;
+  }
+}
