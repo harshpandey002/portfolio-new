@@ -29,7 +29,7 @@ export default function Header() {
   }, []);
 
   const handleResume = () => {
-    window.open('Resume.pdf', '_blank');
+    window.open('/Resume.pdf', '_blank');
   };
 
   return (
