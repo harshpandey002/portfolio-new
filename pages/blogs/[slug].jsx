@@ -11,8 +11,6 @@ import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
 
-import styles from "@/styles/Home.module.css";
-
 export default function BlogDetail({ frontmatter, content }) {
   const { image, title, date, description, tags } = frontmatter;
 
@@ -22,7 +20,6 @@ export default function BlogDetail({ frontmatter, content }) {
     <Layout
       title={`${title} — Harsh Pandey`}
       description={description}
-      // image={image}
     >
       <motion.div
         key="BlogDetail"
@@ -30,23 +27,22 @@ export default function BlogDetail({ frontmatter, content }) {
         animate="visible"
         exit="exit"
         variants={stagger}
-        className={styles.blogDetail}
       >
-        <h1 id={styles.blogTitle}>
+        <h1 className="text-center text-[48px] font-bold text-text-primary mb-4 mobile:text-[28px] mobile:mt-8 mobile:leading-[1.4] mobile:!mb-8">
           <AnimatedText>{title}</AnimatedText>
         </h1>
-        <motion.p variants={noStagger} id={styles.blogDetail}>
+        <motion.p variants={noStagger} className="mt-3 text-lg leading-[1.5] text-center text-text-detail mobile:text-sm">
           <AnimatedText>{detail}</AnimatedText>
         </motion.p>
-        <motion.ul variants={stagger} id={styles.blogTags}>
+        <motion.ul variants={stagger} className="overflow-hidden mx-auto mt-5 w-max max-w-full flex flex-wrap items-center justify-center gap-6 text-xl list-none mobile:gap-4">
           {React.Children.toArray(
-            tags.map((tag) => <motion.li variants={item}>{tag}</motion.li>)
+            tags.map((tag) => <motion.li className="bg-tag-bg py-2 px-3 rounded mobile:text-sm" variants={item}>{tag}</motion.li>)
           )}
         </motion.ul>
         {image && (
           <motion.img
             variants={cards}
-            id={styles.blogImg}
+            className="w-full rounded mt-16 mb-8 mobile:mt-8"
             src={image}
             alt={title}
           />

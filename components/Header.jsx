@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '@/styles/Header.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -34,7 +33,7 @@ export default function Header() {
 
   return (
     <>
-      <span className={styles.menu}>
+      <span className="hidden mobile:flex bg-nav-mobile-bg mix-blend-difference backdrop-blur-[5px] rounded-full w-12 h-12 items-center justify-center fixed bottom-[57px] right-[10px] translate-x-[-50%] translate-y-[50%] z-[11]">
         <Hamburger
           rounded
           color="#303030"
@@ -43,30 +42,32 @@ export default function Header() {
           toggle={setShowMenu}
         />
       </span>
-      <div className={styles.gradient} />
-      <div className={`${styles.container} ${showMenu ? styles.clip : ''}`}>
-        <nav className={styles.navbar}>
-          <div className={styles.logo}>
+      <div className="sticky top-0 h-1 z-10 bg-gradient-accent" />
+      <div
+        className={`w-full flex flex-col sticky top-1 z-10 border-b border-border-dark bg-[rgba(17,17,17,0.881)] backdrop-blur-[10px] mobile:fixed mobile:top-auto mobile:bottom-[10%] mobile:right-4 mobile:w-max mobile:h-[50vh] mobile:!border-b-0 mobile:!bg-transparent mobile:backdrop-blur-0 mobile:transition-all mobile:duration-[400ms] mobile:ease-out ${showMenu ? 'mobile:clip-path-[circle(83%_at_83%_85%)]' : 'mobile:clip-path-[circle(0%_at_70%_96%)]'}`}
+      >
+        <nav className="py-[1.4rem] px-8 flex items-center justify-between mobile:py-[1.4rem] mobile:px-[1.4rem] mobile:items-end mobile:w-max mobile:mx-auto mobile:mt-auto">
+          <div className="cursor-pointer mobile:hidden">
             <Link href="/" scroll={false}>
-              <img src="../harshpandey.png" alt="Logo" />
+              <img className="w-[150px] mb-[-10px]" src="../harshpandey.png" alt="Logo" />
             </Link>
           </div>
-          <ul className={styles.links}>
+          <ul className="flex items-center gap-1 list-none mobile:gap-3 mobile:flex-col mobile:items-end mobile:w-max">
             <Link href="/" scroll={false}>
-              <li className={isActive('/') ? styles.active : ''}>Home</li>
+              <li className={`py-2 px-[22px] rounded cursor-pointer text-base font-semibold hover:bg-hover-nav hover:text-white mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text ${isActive('/') ? 'bg-hover-nav text-white mobile:!bg-white mobile:!text-black' : 'text-[#a0a0a0]'}`}>Home</li>
             </Link>
             <Link href="/blogs" scroll={false}>
-              <li className={isActive('/blogs') ? styles.active : ''}>Blogs</li>
+              <li className={`py-2 px-[22px] rounded cursor-pointer text-base font-semibold hover:bg-hover-nav hover:text-white mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text ${isActive('/blogs') ? 'bg-hover-nav text-white mobile:!bg-white mobile:!text-black' : 'text-[#a0a0a0]'}`}>Blogs</li>
             </Link>
             <Link href="/projects" scroll={false}>
-              <li className={isActive('/projects') ? styles.active : ''}>
+              <li className={`py-2 px-[22px] rounded cursor-pointer text-base font-semibold hover:bg-hover-nav hover:text-white mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text ${isActive('/projects') ? 'bg-hover-nav text-white mobile:!bg-white mobile:!text-black' : 'text-[#a0a0a0]'}`}>
                 Projects
               </li>
             </Link>
             <Link href="/about" scroll={false}>
-              <li className={isActive('/about') ? styles.active : ''}>About</li>
+              <li className={`py-2 px-[22px] rounded cursor-pointer text-base font-semibold hover:bg-hover-nav hover:text-white mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text ${isActive('/about') ? 'bg-hover-nav text-white mobile:!bg-white mobile:!text-black' : 'text-[#a0a0a0]'}`}>About</li>
             </Link>
-            <li onClick={handleResume} className={styles.resume}>
+            <li onClick={handleResume} className="py-2 px-[22px] rounded cursor-pointer text-base text-[#a0a0a0] font-semibold hover:bg-hover-nav hover:text-white flex items-center justify-center gap-2 mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text">
               Resume <BsDownload />
             </li>
           </ul>

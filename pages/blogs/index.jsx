@@ -2,7 +2,6 @@
 import AnimatedText from "@/components/AnimatedText";
 import BlogCard from "@/components/BlogCard";
 import Layout from "@/components/Layout";
-import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import fs from "fs";
 import matter from "gray-matter";
@@ -14,20 +13,19 @@ import React from "react";
 export default function Blogs({ blogs }) {
   return (
     <Layout title="Blogs – Harsh Pandey">
-      <div className={styles.container}>
+      <div>
         <motion.div
           key="blogs"
           initial="hidden"
           animate="visible"
           exit="exit"
           variants={stagger}
-          className={styles.hero}
         >
-          <h1>
+          <h1 className="text-[60px] font-bold text-text-primary mb-4 mobile:text-[32px] mobile:leading-[1.4] mobile:mt-8 mobile:!mb-8">
             <AnimatedText>Blogs</AnimatedText>
           </h1>
 
-          <motion.p variants={noStagger}>
+          <motion.p className="text-lg leading-[var(--line-height)] text-text-muted" variants={noStagger}>
             <AnimatedText>
               To help other developers comprehend the concepts as well, I like
               to document my learnings, by writing articles about well-known
@@ -49,7 +47,7 @@ export default function Blogs({ blogs }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className={styles.blogWrapper}
+          className="flex flex-col gap-4"
         >
           {React.Children.toArray(
             blogs.map((blog) => <BlogCard blog={blog} />)
@@ -61,12 +59,9 @@ export default function Blogs({ blogs }) {
 }
 
 export async function getStaticProps() {
-  // Get files from the posts dir
   const files = fs.readdirSync(path.join("blogs"));
 
-  // Get slug and frontmatter from posts
   let blogs = files.map((filename) => {
-    // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
       path.join("blogs", filename),
       "utf-8"
@@ -80,16 +75,6 @@ export async function getStaticProps() {
   });
 
   blogs.sort(sortByDate);
-
-  // const unpublished = [];
-  // const published = [];
-
-  // blogs.forEach((blog) => {
-  //   if (blog.isLive) published.push(blog);
-  //   else unpublished.push(blog);
-  // });
-
-  // blogs = [...published, ...unpublished];
 
   return {
     props: {
