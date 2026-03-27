@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
 :root {
@@ -96,5 +100,14 @@ a {
   :root {
     --line-height: 1.55;
     --width: 100%;
+  }
+}
+
+@layer utilities {
+  .clip-path-\[circle\(0\%_at_70\%_96\%\)\] {
+    clip-path: circle(0% at 70% 96%);
+  }
+  .clip-path-\[circle\(83\%_at_83\%_85\%\)\] {
+    clip-path: circle(83% at 83% 85%);
   }
 }

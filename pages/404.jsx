@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
@@ -33,20 +32,19 @@ export default function NotFound() {
 
   return (
     <Layout>
-      <div className={styles.container}>
+      <div>
         <motion.div
           key="blogs"
           initial="hidden"
           animate="visible"
           exit="exit"
           variants={stagger}
-          className={styles.hero}
         >
-          <h1>
+          <h1 className="text-[60px] font-bold text-text-primary mb-4 mobile:text-[32px] mobile:leading-[1.4] mobile:mt-8 mobile:!mb-8">
             <AnimatedText>{text}</AnimatedText>
           </h1>
 
-          <motion.p variants={noStagger}>
+          <motion.p className="text-lg leading-[var(--line-height)] text-text-muted" variants={noStagger}>
             <AnimatedText>{message}</AnimatedText>
           </motion.p>
         </motion.div>

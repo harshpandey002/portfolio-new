@@ -8,7 +8,7 @@ import News from '@/components/News';
 function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence
-      exitBeforeEnter
+      mode="wait"
       onExitComplete={() => window.scrollTo(0, 0)}>
       <Script
         strategy="lazyOnload"
