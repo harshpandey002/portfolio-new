@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '@/styles/Layout.module.css';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -90,10 +89,10 @@ export default function Layout({ title, description, image, children }) {
       </Head>
 
       <Header />
-      <div className={styles.children}>{children}</div>
-      <motion.div exit={{ opacity: 0 }} className={styles.footer}>
+      <div className="max-w-layout mx-auto py-[4.5rem] overflow-hidden tablet:p-8 tablet:pb-32">{children}</div>
+      <motion.div exit={{ opacity: 0 }} className="hidden tablet:flex items-center px-8 py-4 border-t border-footer-border">
         <Link href="/" scroll={false}>
-          <img src="../harshpandey.png" alt="Logo" />
+          <img className="w-[160px]" src="../harshpandey.png" alt="Logo" />
         </Link>
       </motion.div>
     </motion.div>
