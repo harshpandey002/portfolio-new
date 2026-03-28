@@ -18,7 +18,7 @@ export default function Projects() {
           exit="exit"
           variants={stagger}
         >
-          <h1 className="text-[60px] font-bold text-text-primary mb-4 mobile:text-[32px] mobile:leading-[1.4] mobile:mt-8 mobile:!mb-8">
+          <h1 className="text-[60px] leading-[1.1] font-bold text-text-primary mb-4 mobile:text-[32px] mobile:leading-[1.4] mobile:mt-8 mobile:!mb-8">
             <AnimatedText>Projects</AnimatedText>
           </h1>
 
