@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <>
-      <span className="hidden mobile:flex bg-nav-mobile-bg mix-blend-difference backdrop-blur-[5px] rounded-full w-12 h-12 items-center justify-center fixed bottom-[57px] right-[10px] translate-x-[-50%] translate-y-[50%] z-[11]">
+      <span className="hidden mobile:flex bg-nav-mobile-bg mix-blend-difference backdrop-blur-[5px] rounded-full w-12 h-12 items-center justify-center fixed bottom-6 right-4 z-[11]">
         <Hamburger
           rounded
           color="#303030"
