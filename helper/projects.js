@@ -1,5 +1,120 @@
 export const projects = [
   {
+    image: "pouch-cover.svg",
+    title: "Pouch",
+    skills: [
+      "Expo",
+      "React Native",
+      "TypeScript",
+      "SQLite",
+      "Drizzle",
+      "RevenueCat",
+      "Zustand",
+    ],
+    url: {
+      label: "Private repository",
+    },
+    description: [
+      "A minimalist, mobile-first expense tracker designed around fast entry, local-first persistence, and a warm consumer-product feel. The app supports categories, tags, spending groups, budgets, calendar views, card-based insights, CSV export, onboarding, and a 60-day trial flow.",
+      "I built the app with Expo Router, strict TypeScript, NativeWind, Zustand domain stores, SQLite + Drizzle for typed local data, Reanimated/Gesture Handler interactions, SVG charts, and RevenueCat subscription plumbing with a development fallback for local testing.",
+    ],
+  },
+  {
+    image: "algo-cover.svg",
+    title: "Algo Trading",
+    skills: [
+      "Nextjs",
+      "React",
+      "TypeScript",
+      "Kite Connect",
+      "SSE",
+      "Zustand",
+      "Jotai",
+      "Sentry",
+    ],
+    url: {
+      label: "trading.harshpandey.com",
+      link: "https://trading.harshpandey.com",
+    },
+    description: [
+      "A single-tenant options execution desk for Zerodha Kite Connect. The product focuses on one-trade-at-a-time execution: live tick streams, authoritative candle sync, option-chain selection, risk-based sizing previews, armed limit entries, protective stop-loss placement, trail-to-breakeven, and ours-only square-off flows.",
+      "The most important engineering work lives server-side: frozen anchor candles, synthetic stop-limit triggers, durable active-trade state on disk, order-update reconciliation, Kite WebSocket fan-out over SSE, structured logging, Sentry instrumentation, and deployment safeguards that prevent shipping while a trade is active.",
+    ],
+  },
+  {
+    image: "lockwars-cover.svg",
+    title: "LockWars",
+    skills: [
+      "Expo",
+      "React Native",
+      "TypeScript",
+      "Firebase",
+      "Socket.io",
+      "Zustand",
+      "Jotai",
+    ],
+    url: {
+      label: "Private repository",
+    },
+    description: [
+      "A fantasy sports mobile application spanning auth, multi-step signup, lobbies, lineups, player cards, matchup rooms, promotions, token-shop screens, wallet deposit/withdraw flows, and realtime chat.",
+      "The app combines Expo Router, NativeWind, Firebase services, socket-driven lobby and lineup contexts, typed API clients, shared server/client event types, Zustand slices, Jotai atoms, and separate server-side Prisma code for backend state.",
+    ],
+  },
+  {
+    image: "forecast-cover.svg",
+    title: "Forecast Dashboard",
+    skills: [
+      "Nextjs",
+      "TypeScript",
+      "Discord API",
+      "Prisma",
+      "Jotai",
+      "TanStack Table",
+      "Tailwindcss",
+    ],
+    url: {
+      label: "Private repository",
+    },
+    description: [
+      "A Discord server dashboard for running AI-generation campaigns, managing guild onboarding, choosing admin channels, checking bot permissions, tracking generation credits, and exporting campaign analytics.",
+      "I built Discord workflow automation for campaign messages, voting and leaderboard threads, contest persistence, permissions checks, server analytics, and admin-facing dashboards with tables, filters, and dark-mode UI.",
+    ],
+  },
+  {
+    image: "shadcn-theme-cover.svg",
+    title: "shadcn Theme Generator",
+    skills: [
+      "Nextjs",
+      "TypeScript",
+      "Tailwindcss",
+      "shadcn/ui",
+      "Radix UI",
+      "Jotai",
+    ],
+    url: {
+      label: "shadcn-theme.vercel.app",
+      link: "https://shadcn-theme.vercel.app",
+    },
+    description: [
+      "A public theme-generation tool for shadcn/ui projects. Users choose a base color, tune saturation and lightness, preview the theme across real UI components, switch dark mode, and copy ready-to-use CSS variables.",
+      "The generator converts hex colors to HSL, derives complete light and dark token sets, applies them live with CSS variables, and renders a practical component gallery so developers can judge the theme before copying it.",
+    ],
+  },
+  {
+    image: "numa-cover.svg",
+    title: "Numa Swap Interface",
+    skills: ["Nextjs", "TypeScript", "wagmi", "viem", "Jotai", "Tailwindcss"],
+    url: {
+      label: "numa-beta.vercel.app",
+      link: "https://numa-beta.vercel.app",
+    },
+    description: [
+      "A Web3 swap interface for minting NUMA with rETH and redeeming rETH by burning NUMA. The UI handles wallet connection, Arbitrum network switching, live balances, allowance checks, approval transactions, confirmation states, and transaction success flows.",
+      "The app reads vault simulation data directly from contracts, refetches pricing data, computes displayed NUMA/rETH estimates, and protects users from protocol limits by warning when a single transaction exceeds the vault threshold.",
+    ],
+  },
+  {
     image: "dopp.png",
     title: "Crowdfunding Dapp",
     skills: ["Solidity", "Thirdweb", "TypeScript", "Tailwindcss", "Nextjs"],
@@ -33,19 +148,6 @@ export const projects = [
     },
     description: [
       "An educational platform where user can learn everything user need to know about Web3 and Blockchain with a series of articles, in-depth tutorials, structured courses and complete project guides.",
-    ],
-  },
-  {
-    image: "erc20.png",
-    title: "Project-ERC20",
-    skills: ["Nextjs", "Solidity", "Hardhat", "Etherjs", "MongoDb"],
-    url: {
-      label: "project-erc20.vercel.app",
-      link: "https://project-erc20.vercel.app/",
-    },
-    description: [
-      "A full-stack web3 project where you can Mint, Transfer and Burn your HKP (Harsh Kumar Pandey) token.",
-      "Using OpenZeppelin, I created an ERC20 Token Smart Contract, compiled and deployed to Goerli Testnet using Hardhat. I used Etherjs in the frontend to interact with the smart contract.",
     ],
   },
   {

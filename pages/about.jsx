@@ -28,40 +28,44 @@ export default function About() {
         <motion.div variants={noStagger} className="flex flex-col gap-[26px] w-[var(--width)] mx-auto">
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
-              I'm Harsh Pandey, an India based Full-Stack blockchain developer
-              with over two & half years of development experience. I specialise
-              in developing responsive user interfaces for web-based
-              applications with a focus on secure and smooth user experience.
+              I'm Harsh Pandey, an India based full-stack developer with a
+              strong eye for UI, product detail, and frontend architecture. I
+              work mostly with React, Next.js, TypeScript, React Native, and the
+              tools around modern product engineering.
             </AnimatedText>
           </p>
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
-              I'm currently working as freelancer at blocktrain.info where you
-              can find best resources to become excellent blockchain developer.
-              Before that, I worked at AppSecure where I designed and developed
-              Pentabug, a highly secure bug bounty platform.
+              Over the last few years I have built mobile finance apps, trading
+              systems, Web3 interfaces, Discord dashboards, developer tools,
+              blockchain education products, NFT marketplaces, and secure
+              platform interfaces.
             </AnimatedText>
           </p>
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
-              I began working full-time at AppSecure seven months before I
-              graduated from college in January 2022.
+              I began working full-time at AppSecure before graduating in
+              January 2022, where I worked on security-focused product
+              interfaces. Since then, I have kept building independent products
+              and freelance/client projects with a bias toward shipping.
             </AnimatedText>
           </p>
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
-              In August 2022, I left my first full-time position at AppSecure in
-              order to study blockchain programming and contribute to the Web3
-              community.
+              My strongest work tends to sit at the intersection of careful
+              frontend craft and practical systems: realtime data, local
+              persistence, trading/order flows, dashboards, wallet interactions,
+              and state machines that need to be understandable under pressure.
             </AnimatedText>
           </p>
 
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
-              In my third year in college, I began freelancing. Fortunately, I
-              worked with a client in Spain on my first project, EduCompanion.
-              Not only did I polished my technical knowledge, but also acquired
-              soft skills like how to professionally deal with clients.
+              In my third year of college, I began freelancing. My first client
+              project was EduCompanion, an education platform for a client in
+              Spain. That project shaped both my technical confidence and how I
+              communicate with clients while moving ambiguous ideas toward
+              working software.
             </AnimatedText>
           </p>
 

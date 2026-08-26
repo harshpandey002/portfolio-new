@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 export default function News() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {

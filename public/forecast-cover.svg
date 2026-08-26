@@ -1,0 +1,16 @@
+<svg width="1350" height="751" viewBox="0 0 1350 751" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1350" height="751" fill="#0f1117"/>
+  <rect x="78" y="70" width="1194" height="611" rx="28" fill="#171b24" stroke="#2a3140"/>
+  <image href="/forecastIcon.png" x="106" y="108" width="118" height="118"/>
+  <text x="252" y="158" fill="#f8fafc" font-family="monospace" font-size="52" font-weight="700">Forecast Dashboard</text>
+  <text x="256" y="208" fill="#a6b0c3" font-family="monospace" font-size="24">Discord campaign management and analytics</text>
+  <rect x="118" y="318" width="270" height="150" rx="18" fill="#202636"/>
+  <text x="148" y="374" fill="#f59e0b" font-family="monospace" font-size="22">Generation credits</text>
+  <text x="148" y="430" fill="#f8fafc" font-family="monospace" font-size="54">2,400</text>
+  <rect x="430" y="318" width="270" height="150" rx="18" fill="#202636"/>
+  <text x="460" y="374" fill="#93c5fd" font-family="monospace" font-size="22">Campaigns</text>
+  <text x="460" y="430" fill="#f8fafc" font-family="monospace" font-size="54">38</text>
+  <rect x="742" y="318" width="424" height="150" rx="18" fill="#202636"/>
+  <text x="772" y="374" fill="#a7f3d0" font-family="monospace" font-size="22">Discord threads</text>
+  <text x="772" y="430" fill="#f8fafc" font-family="monospace" font-size="34">Vote + leaderboard automation</text>
+</svg>

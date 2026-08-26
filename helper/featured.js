@@ -1,23 +1,28 @@
 export const featured = [
   {
-    image: "doppIcon.png",
-    title: "Crowdfunding Dapp",
+    image: "pouchIcon.png",
+    title: "Pouch",
     description:
-      "Designed and Developed this Dapp where user can raise or donate funds to different campaigns of their choice. Payments are done in Goerli Ether.",
-    link: "https://dopp.vercel.app/",
+      "A polished Expo expense tracker with local-first SQLite storage, groups, budgets, insights, export flows, and a RevenueCat subscription layer.",
   },
   {
-    image: "blocktrainIcon.png",
-    title: "BlockTrain",
+    image: "algoIcon.png",
+    title: "Algo Trading",
     description:
-      "A platform where you will learn everything about Web3 and Blockchain with series of articles, in-depth tutorials, structured courses and complete project guides.",
-    link: "https://blocktrain.info",
+      "A single-tenant options execution desk for Zerodha Kite with live ticks, candle charts, server-side risk sizing, and an order lifecycle engine.",
+    link: "https://trading.harshpandey.com",
   },
   {
-    image: "openriverIcon.png",
-    title: "OpenRiver",
+    image: "lockwarsIcon.png",
+    title: "LockWars",
     description:
-      "NFT Marketplace developed using thirdweb SDK & pre-built contracts and Moralis web3 API without any backend or Baas.",
-    link: "https://openriver-thirdweb.vercel.app/",
+      "A fantasy sports mobile app with lineups, lobbies, wallet flows, realtime chat, and socket-driven matchup state across NBA, NFL, and MLB.",
+  },
+  {
+    image: "shadcnIcon.svg",
+    title: "shadcn Theme Generator",
+    description:
+      "A public design-tool project that generates shadcn-compatible light and dark CSS variables from a base color with advanced controls.",
+    link: "https://shadcn-theme.vercel.app",
   },
 ];

@@ -1,1 +1,1 @@
-### [Harsh Pandey](www.harshkumarpandey.com)
+### [Harsh Pandey](https://harshpandey.com)

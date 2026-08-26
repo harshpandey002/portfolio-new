@@ -1,0 +1,11 @@
+<svg width="1350" height="751" viewBox="0 0 1350 751" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1350" height="751" fill="#080a12"/>
+  <circle cx="1068" cy="174" r="260" fill="#1b2556" opacity="0.7"/>
+  <circle cx="296" cy="592" r="280" fill="#202044" opacity="0.7"/>
+  <rect x="396" y="96" width="558" height="558" rx="36" fill="#11131d" stroke="#2f3549"/>
+  <image href="/numaIcon.png" x="584" y="146" width="182" height="182"/>
+  <text x="502" y="392" fill="#f8fafc" font-family="monospace" font-size="58" font-weight="700">Numa Swap</text>
+  <text x="486" y="448" fill="#9aa4ba" font-family="monospace" font-size="24">Mint NUMA with rETH, redeem, approve, confirm</text>
+  <rect x="478" y="508" width="394" height="66" rx="20" fill="#1a1d2b"/>
+  <text x="522" y="550" fill="#c4b5fd" font-family="monospace" font-size="24">wagmi / viem / Arbitrum</text>
+</svg>

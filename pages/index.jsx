@@ -23,7 +23,7 @@ import path from 'path';
 
 export default function Home({ blogs }) {
   return (
-    <Layout title="Harsh Pandey – Full-Stack Blockchain Developer">
+    <Layout title="Harsh Pandey – Full-Stack Product Engineer">
       <div>
         <motion.div
           key="home"
@@ -33,25 +33,24 @@ export default function Home({ blogs }) {
           variants={stagger}>
           <h1 className="text-[60px] leading-[1.1] font-bold text-text-primary mb-4 mobile:text-[32px] mobile:leading-[1.4] mobile:mt-8 mobile:!mb-8" style={{ marginBottom: '4rem' }}>
             <AnimatedText>
-              UI/UX. Full-Stack. Blockchain. Freelance.
+              Product-minded full-stack engineer.
             </AnimatedText>
           </h1>
 
           <motion.p className="text-lg leading-[var(--line-height)] text-text-muted" variants={noStagger}>
             <AnimatedText>
-              I'm Harsh Pandey, an India based Full-Stack blockchain developer
-              with over two & half years of development experience with
-              Reactjs/Nextjs. I specialize in developing responsive user
-              interfaces for web-based applications with a focus on secure and
-              smooth user experience.
+              I'm Harsh Pandey, an India based full-stack developer who likes
+              building polished interfaces around real product problems. My
+              recent work spans web apps, mobile apps, trading tools, Web3
+              interfaces, dashboards, and design systems.
             </AnimatedText>
           </motion.p>
           <motion.p className="text-lg leading-[var(--line-height)] text-text-muted mt-8" variants={noStagger}>
             <AnimatedText>
-              I'm currently working as freelancer at blocktrain.info where you
-              can find best resources to become excellent blockchain developer.
-              Before that, I worked at AppSecure where I designed and developed
-              Pentabug, a highly secure bug bounty platform.
+              I care about fast, carefully designed software: local-first data
+              flows, realtime systems, resilient server logic, clean state
+              management, and user experiences that feel considered from the
+              first click.
             </AnimatedText>
           </motion.p>
 
@@ -126,7 +125,8 @@ export default function Home({ blogs }) {
           exit="exit">
           <h2 className="text-[28px] text-text-heading mobile:text-2xl">Featured Projects</h2>
           <p className="text-text-body text-base mt-4 leading-[var(--line-height)]">
-            A collection of some side projects that I have shipped recently.
+            A tighter selection of recent product work across mobile, trading,
+            realtime apps, and developer tools.
           </p>
           <div className="mt-16 flex flex-col gap-4">
             {featured.map((data, i) => (
@@ -143,8 +143,8 @@ export default function Home({ blogs }) {
           style={{ marginTop: '5rem' }}>
           <h2 className="text-[28px] text-text-heading mobile:text-2xl">Recent Blogs</h2>
           <p className="text-text-body text-base mt-4 leading-[var(--line-height)]">
-            As I delve deeply into blockchain technology, I also like to assist
-            other developers.
+            Notes from learning in public, mostly around blockchain, Web3, and
+            implementation details I wanted to explain clearly.
           </p>
           <div className="mt-16 flex flex-col gap-4">
             {React.Children.toArray(

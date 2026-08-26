@@ -101,6 +101,7 @@ export default function Layout({ title, description, image, children }) {
 
 Layout.defaultProps = {
   title: 'Harsh Kumar Pandey',
-  description: 'UI/UX Designer and Full Stack Blockchain Developer.',
-  image: 'https://www.harshkumarpandey.com/about.webp',
+  description:
+    'Full-stack product engineer building polished web, mobile, trading, and Web3 interfaces.',
+  image: 'https://harshpandey.com/about.webp',
 };

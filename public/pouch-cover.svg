@@ -1,0 +1,15 @@
+<svg width="1350" height="751" viewBox="0 0 1350 751" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1350" height="751" fill="#17130f"/>
+  <rect x="52" y="48" width="1246" height="655" rx="28" fill="#f5efe4"/>
+  <circle cx="122" cy="120" r="18" fill="#2f241b"/>
+  <circle cx="174" cy="120" r="18" fill="#c77442"/>
+  <circle cx="226" cy="120" r="18" fill="#6d8a72"/>
+  <text x="96" y="236" fill="#2f241b" font-family="monospace" font-size="72" font-weight="700">Pouch</text>
+  <text x="100" y="302" fill="#74695d" font-family="monospace" font-size="28">Minimalist expense tracker for iOS and Android</text>
+  <text x="100" y="368" fill="#2f241b" font-family="monospace" font-size="26">Expo Router / SQLite / Drizzle / RevenueCat</text>
+  <text x="100" y="412" fill="#2f241b" font-family="monospace" font-size="26">Groups, budgets, insights, export, paywall</text>
+  <rect x="775" y="72" width="238" height="608" rx="38" fill="#211a14"/>
+  <image href="/pouchToday.png" x="789" y="88" width="210" height="456" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="1040" y="118" width="210" height="528" rx="34" fill="#211a14"/>
+  <image href="/pouchInsights.png" x="1052" y="134" width="186" height="404" preserveAspectRatio="xMidYMid slice"/>
+</svg>

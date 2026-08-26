@@ -117,13 +117,18 @@ function Project({ data }) {
           ))}
         </div>
 
-        <button
-          onClick={() => open(url.link)}
-          disabled={!url.link}
-          className="border border-border-btn-alt bg-btn-bg flex items-center justify-center gap-2 text-base py-2 px-4 rounded-pill text-white hover:bg-hover-btn-alt"
-        >
-          {url.label} {!!url.link && <BiLinkExternal />}
-        </button>
+        {url.link ? (
+          <button
+            onClick={() => open(url.link)}
+            className="border border-border-btn-alt bg-btn-bg flex items-center justify-center gap-2 text-base py-2 px-4 rounded-pill text-white hover:bg-hover-btn-alt"
+          >
+            {url.label} <BiLinkExternal />
+          </button>
+        ) : (
+          <span className="border border-border-btn-alt bg-btn-bg inline-flex items-center justify-center gap-2 text-base py-2 px-4 rounded-pill text-text-muted">
+            {url.label}
+          </span>
+        )}
       </div>
     </div>
   );

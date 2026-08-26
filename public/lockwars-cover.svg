@@ -1,0 +1,16 @@
+<svg width="1350" height="751" viewBox="0 0 1350 751" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1350" height="751" fill="#080a10"/>
+  <rect x="70" y="72" width="1210" height="607" rx="32" fill="#101520" stroke="#273047"/>
+  <image href="/lockwarsIcon.png" x="102" y="110" width="420" height="174" preserveAspectRatio="xMidYMid meet"/>
+  <text x="108" y="370" fill="#f8fafc" font-family="monospace" font-size="58" font-weight="700">LockWars</text>
+  <text x="112" y="428" fill="#9aa7bd" font-family="monospace" font-size="26">Fantasy sports lineups, wallets, chat, lobby state</text>
+  <rect x="760" y="118" width="396" height="112" rx="20" fill="#192033" stroke="#36415d"/>
+  <text x="794" y="164" fill="#f8fafc" font-family="monospace" font-size="26">NBA / NFL / MLB</text>
+  <text x="794" y="198" fill="#8fb4ff" font-family="monospace" font-size="20">Realtime matchups</text>
+  <rect x="716" y="284" width="440" height="112" rx="20" fill="#192033" stroke="#36415d"/>
+  <text x="750" y="330" fill="#f8fafc" font-family="monospace" font-size="26">Wallet flows</text>
+  <text x="750" y="364" fill="#8fb4ff" font-family="monospace" font-size="20">Deposit, withdraw, transactions</text>
+  <rect x="812" y="450" width="344" height="112" rx="20" fill="#192033" stroke="#36415d"/>
+  <text x="846" y="496" fill="#f8fafc" font-family="monospace" font-size="26">Firebase chat</text>
+  <text x="846" y="530" fill="#8fb4ff" font-family="monospace" font-size="20">Socket-driven game state</text>
+</svg>
