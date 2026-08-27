@@ -24,10 +24,10 @@ export default function Projects() {
 
           <motion.p className="text-lg leading-[var(--line-height)] text-text-muted" variants={noStagger}>
             <AnimatedText>
-              I've built products of various types and sizes using the most
-              popular technologies out there, ranging from one page sites to the
-              super secure bug bounty platform to NFT Marketplace. Here is a
-              collection of some of my projects and experiences.
+              I've built products of various types and sizes, from private
+              product platforms and mobile apps to trading tools, dashboards,
+              Web3 interfaces, and developer utilities. Here is a collection of
+              some of my projects and experiences.
             </AnimatedText>
           </motion.p>
         </motion.div>

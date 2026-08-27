@@ -41,8 +41,8 @@ export default function Home({ blogs }) {
             <AnimatedText>
               I'm Harsh Pandey, an India based full-stack developer who likes
               building polished interfaces around real product problems. My
-              recent work spans web apps, mobile apps, trading tools, Web3
-              interfaces, dashboards, and design systems.
+              recent work spans product platforms, mobile apps, trading tools,
+              Web3 interfaces, dashboards, and design systems.
             </AnimatedText>
           </motion.p>
           <motion.p className="text-lg leading-[var(--line-height)] text-text-muted mt-8" variants={noStagger}>
@@ -125,8 +125,8 @@ export default function Home({ blogs }) {
           exit="exit">
           <h2 className="text-[28px] text-text-heading mobile:text-2xl">Featured Projects</h2>
           <p className="text-text-body text-base mt-4 leading-[var(--line-height)]">
-            A tighter selection of recent product work across mobile, trading,
-            realtime apps, and developer tools.
+            A tighter selection of recent product work across platform
+            engineering, mobile, trading, realtime apps, and developer tools.
           </p>
           <div className="mt-16 flex flex-col gap-4">
             {featured.map((data, i) => (

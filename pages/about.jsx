@@ -37,9 +37,9 @@ export default function About() {
           <p className="text-base text-text-body leading-[var(--line-height)]">
             <AnimatedText>
               Over the last few years I have built mobile finance apps, trading
-              systems, Web3 interfaces, Discord dashboards, developer tools,
-              blockchain education products, NFT marketplaces, and secure
-              platform interfaces.
+              systems, fan-engagement platforms, Web3 interfaces, Discord
+              dashboards, developer tools, blockchain education products, NFT
+              marketplaces, and secure platform interfaces.
             </AnimatedText>
           </p>
           <p className="text-base text-text-body leading-[var(--line-height)]">

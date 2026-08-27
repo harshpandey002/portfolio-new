@@ -1,5 +1,28 @@
 export const projects = [
   {
+    image: "juice-cover.svg",
+    title: "Juice Labs Platform",
+    skills: [
+      "Nextjs",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Sentry",
+      "ClickHouse",
+      "AWS",
+      "Capacitor",
+      "Vitest",
+    ],
+    url: {
+      label: "Private organization repository",
+    },
+    description: [
+      "A production fan-engagement and rewards platform for live events, built inside a TypeScript monorepo spanning a Next.js server, operator dashboard, mobile/Capacitor app, super-admin, shared core/react packages, CLI tooling, API docs, and product docs.",
+      "I worked across workspace and market flows, quest and prize systems, affiliate codes, redemption/refund paths, venue show-board UX, scheduled notifications, API payloads, and production reliability around Prisma transactions, tests, observability, and AWS-backed infrastructure.",
+    ],
+  },
+  {
     image: "pouch-cover.svg",
     title: "Pouch",
     skills: [

@@ -1,5 +1,11 @@
 export const featured = [
   {
+    image: "juiceIcon.svg",
+    title: "Juice Labs Platform",
+    description:
+      "A private org monorepo for a production fan-engagement platform: quests, prizes, workspaces, dashboards, mobile surfaces, shared packages, and backend systems.",
+  },
+  {
     image: "pouchIcon.png",
     title: "Pouch",
     description:
