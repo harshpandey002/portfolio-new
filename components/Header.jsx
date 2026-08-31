@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Slant as Hamburger } from 'hamburger-react';
-import { BsDownload } from 'react-icons/bs';
+import { BsFileEarmarkText } from 'react-icons/bs';
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,10 +26,6 @@ export default function Header() {
       router.events.off('routeChangeStart', handleRouteChange);
     };
   }, []);
-
-  const handleResume = () => {
-    window.open('/Resume.pdf', '_blank');
-  };
 
   return (
     <>
@@ -81,11 +77,12 @@ export default function Header() {
                 About
               </li>
             </Link>
-            <li
-              onClick={handleResume}
-              className="py-2 px-[22px] rounded cursor-pointer text-base text-[#a0a0a0] font-semibold hover:bg-hover-nav hover:text-white flex items-center justify-center gap-2 mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text">
-              Resume <BsDownload />
-            </li>
+            <Link href="/resume" scroll={false}>
+              <li
+                className={`py-2 px-[22px] rounded cursor-pointer text-base font-semibold hover:bg-hover-nav hover:text-white flex items-center justify-center gap-2 mobile:py-2 mobile:px-3 mobile:bg-nav-mobile-bg mobile:text-nav-mobile-text mobile:text-lg mobile:hover:bg-nav-mobile-bg mobile:hover:text-nav-mobile-text ${isActive('/resume') ? 'bg-hover-nav text-white mobile:!bg-white mobile:!text-black' : 'text-[#a0a0a0]'}`}>
+                Resume <BsFileEarmarkText />
+              </li>
+            </Link>
           </ul>
         </nav>
       </div>
