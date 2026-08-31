@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 export default function BlogCard({ blog, isHome }) {
-  const { title, squareImage, description, slug, isLive } = blog;
+  const { title, squareImage, description, slug, isLive, date } = blog;
 
   return (
     <Link href={`/blogs/${slug}`} scroll={false}>
@@ -16,6 +16,11 @@ export default function BlogCard({ blog, isHome }) {
             {title}{" "}
             {!isLive && <span className="text-freelance italic">(Coming Soon)</span>}
           </h5>
+          {date && (
+            <p className="text-sm text-text-meta leading-[var(--line-height)] mt-1">
+              {date}
+            </p>
+          )}
           <p className="text-base text-text-body leading-[var(--line-height)] mobile:mt-1">{description}</p>
         </span>
       </div>
