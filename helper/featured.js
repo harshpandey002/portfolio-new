@@ -17,6 +17,7 @@ export const featured = [
     title: "Pouch",
     description:
       "A polished Expo expense tracker with local-first SQLite storage, groups, budgets, insights, export flows, and a RevenueCat subscription layer.",
+    link: "https://apps.apple.com/us/app/pouch-expense-tracker/id6779575380",
   },
   {
     image: "algoIcon.png",

@@ -59,7 +59,8 @@ export const projects = [
       "Zustand",
     ],
     url: {
-      label: "Private repository",
+      label: "App Store",
+      link: "https://apps.apple.com/us/app/pouch-expense-tracker/id6779575380",
     },
     description: [
       "A minimalist, mobile-first expense tracker designed around fast entry, local-first persistence, and a warm consumer-product feel. The app supports categories, tags, spending groups, budgets, calendar views, card-based insights, CSV export, onboarding, and a 60-day trial flow.",
