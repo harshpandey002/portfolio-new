@@ -6,6 +6,13 @@ export const featured = [
       "A private org monorepo for a production fan-engagement platform: quests, prizes, workspaces, dashboards, mobile surfaces, shared packages, and backend systems.",
   },
   {
+    image: "roostIcon.png",
+    title: "Roost",
+    description:
+      "A shipped iOS social food app for discovering restaurants, saving wishlists, adding reviews, sharing profiles, and following other foodies.",
+    link: "https://apps.apple.com/us/app/roost-v2/id6743691245",
+  },
+  {
     image: "pouchIcon.png",
     title: "Pouch",
     description:

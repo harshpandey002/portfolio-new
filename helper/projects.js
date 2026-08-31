@@ -23,6 +23,30 @@ export const projects = [
     ],
   },
   {
+    image: "roost-cover.svg",
+    title: "Roost",
+    skills: [
+      "Expo",
+      "React Native",
+      "TypeScript",
+      "Google Places",
+      "Prisma",
+      "PostgreSQL",
+      "Express",
+      "Zustand",
+      "UploadThing",
+      "Expo Notifications",
+    ],
+    url: {
+      label: "App Store",
+      link: "https://apps.apple.com/us/app/roost-v2/id6743691245",
+    },
+    description: [
+      "A shipped iOS food-discovery and social restaurant app for finding nearby and trending places, saving a wishlist, rating and reviewing restaurants, uploading photos, building a foodie profile, and following other users.",
+      "I built the Expo Router mobile app with React Native, TypeScript, NativeWind, location/reverse-geocoding flows, Google Places/Maps integrations, SecureStore-backed auth, push notifications, UploadThing media uploads, Zustand state, and a bundled Express + Prisma + PostgreSQL backend for users, follows, restaurants, saved places, OTP auth, and notifications.",
+    ],
+  },
+  {
     image: "pouch-cover.svg",
     title: "Pouch",
     skills: [
