@@ -4,6 +4,7 @@ export const featured = [
     title: "JuiceXP Platform",
     description:
       "A private org monorepo for a production fan-engagement platform: quests, prizes, workspaces, dashboards, mobile surfaces, shared packages, and backend systems.",
+    link: "https://juicelabs.io",
   },
   {
     image: "roostIcon.png",

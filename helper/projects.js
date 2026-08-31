@@ -14,7 +14,8 @@ export const projects = [
       "Vitest",
     ],
     url: {
-      label: "Private organization repository",
+      label: "juicelabs.io",
+      link: "https://juicelabs.io",
     },
     description: [
       "A production fan-engagement and rewards platform for live events, built inside a TypeScript monorepo spanning a Next.js server, operator dashboard, mobile/Capacitor app, super-admin, shared core/react packages, CLI tooling, API docs, and product docs.",
