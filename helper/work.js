@@ -1,25 +1,18 @@
 export const work = [
   {
-    title: "BlockTrain",
+    title: "JuiceXP",
+    role: "Full-Stack Developer",
+    date: "Jan 2024 - Present",
+  },
+  {
+    title: "Freelance",
     isFreelance: true,
-    role: "Full-Stack Blockchain Developer",
-    date: "Aug 2022 - Nov 2022",
+    role: "Full-Stack Developer",
+    date: "Sep 2022 - Dec 2023",
   },
   {
     title: "AppSecure Security",
     role: "Front-End Developer",
     date: "Jan 2022 - Aug 2022",
-  },
-  {
-    title: "Beyond Pinks",
-    isFreelance: true,
-    role: "Full-Stack Developer",
-    date: "Oct 2021 - Dec 2021",
-  },
-  {
-    title: "EduCompanion",
-    isFreelance: true,
-    role: "Full-Stack Developer",
-    date: "Jul 2021 - Sep 2021",
   },
 ];

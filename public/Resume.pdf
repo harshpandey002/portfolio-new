@@ -20,15 +20,15 @@ endobj
 endobj
 4 0 obj
 <<
-/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R ]
-/Contents 12 0 R
+/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R ]
+/Contents 11 0 R
 /MediaBox [ 0 0 612 792 ]
 /Resources <<
 /Font <<
-/F1 13 0 R
-/F1-0 14 0 R
-/F2 15 0 R
-/F3 16 0 R
+/F1 12 0 R
+/F1-0 13 0 R
+/F2 14 0 R
+/F3 15 0 R
 >>
 /ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
 >>
@@ -119,20 +119,7 @@ endobj
 endobj
 11 0 obj
 <<
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057trading\056harshpandey\056com)
->>
-/Border [ 0 0 0 ]
-/Rect [ 34.56 350.8525 88.2129 361.0525 ]
-/Subtype /Link
-/Type /Annot
->>
-endobj
-12 0 obj
-<<
-/Length 11417
+/Length 11437
 >>
 stream
 q
@@ -220,14 +207,14 @@ q
 1 0 0 1 0 0 cm
 q
 .066667 .094118 .152941 rg
-BT 1 0 0 1 0 1.5 Tm /F2 8.7 Tf 10.2 TL (Juice Labs - Full-Stack Developer) Tj T* ET
+BT 1 0 0 1 0 1.5 Tm /F2 8.7 Tf 10.2 TL (JuiceXP \(formerly Juice Labs\) - Full-Stack Developer) Tj T* ET
 Q
 Q
 q
 1 0 0 1 385.2 1 cm
 q
 .294118 .333333 .388235 rg
-BT 1 0 0 1 0 1.4 Tm /F1 7.8 Tf 9.2 TL 91.7778 0 Td (Jan 2023 - Present) Tj T* -91.7778 0 Td ET
+BT 1 0 0 1 0 1.4 Tm /F1 7.8 Tf 9.2 TL 91.7778 0 Td (Jan 2024 - Present) Tj T* -91.7778 0 Td ET
 Q
 Q
 q
@@ -252,7 +239,7 @@ q
 1 0 0 1 40.56 566.94 cm
 q
 .121569 .160784 .215686 rg
-BT 1 0 0 1 8 1.35 Tm /F1 7.65 Tf 9 TL -5 0 Td (- Improved reliability around Prisma transactions, tests, Sentry/ClickHouse-backed observability, and AWS-integrated infrastructure.) Tj T* 5 0 Td ET
+BT 1 0 0 1 8 1.35 Tm /F1 7.65 Tf 9 TL -5 0 Td (- Improved reliability around Prisma transactions, tests, Sentry-backed observability, and AWS-integrated infrastructure.) Tj T* 5 0 Td ET
 Q
 Q
 q
@@ -314,7 +301,7 @@ q
 1 0 0 1 385.2 1 cm
 q
 .294118 .333333 .388235 rg
-BT 1 0 0 1 0 1.4 Tm /F1 7.8 Tf 9.2 TL 87.8778 0 Td (Jul 2021 - Nov 2022) Tj T* -87.8778 0 Td ET
+BT 1 0 0 1 0 1.4 Tm /F1 7.8 Tf 9.2 TL 83.97 0 Td (Sep 2022 - Dec 2023) Tj T* -83.97 0 Td ET
 Q
 Q
 q
@@ -454,7 +441,7 @@ BT /F1 10 Tf 12 TL ET
 q
 1 0 0 1 0 0 cm
 q
-.07451 .372549 .498039 rg
+.066667 .094118 .152941 rg
 BT 1 0 0 1 0 1.5 Tm /F2 8.7 Tf 10.2 TL (Algo Trading) Tj T* ET
 Q
 Q
@@ -469,7 +456,7 @@ q
 1 0 0 1 40.56 341.34 cm
 q
 .294118 .333333 .388235 rg
-BT 1 0 0 1 0 1.5 Tm /F3 7.6 Tf 9.1 TL (Next.js, TypeScript, Kite Connect, WebSockets, SSE, Sentry) Tj T* ET
+BT 1 0 0 1 0 1.5 Tm /F3 7.6 Tf 9.1 TL (Private project | Next.js, TypeScript, Kite Connect, WebSockets, SSE, Sentry) Tj T* ET
 Q
 Q
 q
@@ -550,7 +537,7 @@ Q
 q
 1 0 0 1 40.56 240.34 cm
 q
-BT 1 0 0 1 0 1.25 Tm 8.8 TL /F2 7.55 Tf .121569 .160784 .215686 rg (Frontend:) Tj /F1 7.55 Tf ( React, Next.js, React Native, Expo, TypeScript, Tailwind CSS, NativeWind, shadcn/ui, Radix UI) Tj T* ET
+BT 1 0 0 1 0 1.25 Tm 8.8 TL /F2 7.55 Tf .121569 .160784 .215686 rg (Frontend:) Tj /F1 7.55 Tf ( React, Next.js, React Native, Expo, TypeScript, Redux, Tailwind CSS, NativeWind, shadcn/ui, Radix UI) Tj T* ET
 Q
 Q
 q
@@ -574,7 +561,7 @@ Q
 q
 1 0 0 1 40.56 199.94 cm
 q
-BT 1 0 0 1 0 1.25 Tm 8.8 TL /F2 7.55 Tf .121569 .160784 .215686 rg (Tools:) Tj /F1 7.55 Tf ( Git, GitHub, Vercel, Sentry, AWS, ClickHouse, Figma) Tj T* ET
+BT 1 0 0 1 0 1.25 Tm 8.8 TL /F2 7.55 Tf .121569 .160784 .215686 rg (Tools:) Tj /F1 7.55 Tf ( Git, GitHub, Vercel, Sentry, AWS, Figma) Tj T* ET
 Q
 Q
 q
@@ -633,6 +620,15 @@ Q
 
 endstream
 endobj
+12 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
 13 0 obj
 <<
 /BaseFont /Helvetica
@@ -644,15 +640,6 @@ endobj
 endobj
 14 0 obj
 <<
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
-/Name /F1
-/Subtype /Type1
-/Type /Font
->>
-endobj
-15 0 obj
-<<
 /BaseFont /Helvetica-Bold
 /Encoding /WinAnsiEncoding
 /Name /F2
@@ -660,7 +647,7 @@ endobj
 /Type /Font
 >>
 endobj
-16 0 obj
+15 0 obj
 <<
 /BaseFont /Helvetica-Oblique
 /Encoding /WinAnsiEncoding
@@ -670,30 +657,29 @@ endobj
 >>
 endobj
 xref
-0 17
+0 16
 0000000000 65535 f 
 0000000015 00000 n 
 0000000054 00000 n 
 0000000113 00000 n 
 0000000162 00000 n 
-0000000454 00000 n 
-0000000643 00000 n 
-0000000825 00000 n 
-0000001019 00000 n 
-0000001230 00000 n 
-0000001476 00000 n 
-0000001706 00000 n 
-0000001901 00000 n 
-0000013372 00000 n 
-0000013480 00000 n 
-0000013588 00000 n 
-0000013701 00000 n 
+0000000447 00000 n 
+0000000636 00000 n 
+0000000818 00000 n 
+0000001012 00000 n 
+0000001223 00000 n 
+0000001469 00000 n 
+0000001699 00000 n 
+0000013190 00000 n 
+0000013298 00000 n 
+0000013406 00000 n 
+0000013519 00000 n 
 trailer
 <<
-/Size 17
+/Size 16
 /Root 3 0 R
 /Info 1 0 R
 >>
 startxref
-13817
+13635
 %%EOF

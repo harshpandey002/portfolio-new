@@ -46,8 +46,9 @@ export default function About() {
             <AnimatedText>
               I began working full-time at AppSecure before graduating in
               January 2022, where I worked on security-focused product
-              interfaces. Since then, I have kept building independent products
-              and freelance/client projects with a bias toward shipping.
+              interfaces. After that I freelanced from September 2022 to
+              December 2023, then joined JuiceXP, formerly Juice Labs, in
+              January 2024.
             </AnimatedText>
           </p>
           <p className="text-base text-text-body leading-[var(--line-height)]">

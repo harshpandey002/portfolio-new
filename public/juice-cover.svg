@@ -3,7 +3,7 @@
   <rect x="56" y="52" width="1238" height="647" rx="28" fill="#fff7e8"/>
   <rect x="96" y="96" width="340" height="110" rx="24" fill="#ff7a1a"/>
   <image href="/juiceIcon.png" x="124" y="122" width="58" height="58"/>
-  <text x="206" y="166" fill="#111111" font-family="monospace" font-size="42" font-weight="700">Juice Labs</text>
+  <text x="206" y="166" fill="#111111" font-family="monospace" font-size="42" font-weight="700">JuiceXP</text>
   <text x="96" y="282" fill="#111111" font-family="monospace" font-size="58" font-weight="700">Fan engagement platform</text>
   <text x="100" y="340" fill="#5f5246" font-family="monospace" font-size="26">Quests / prizes / workspaces / rewards / live events</text>
   <g>

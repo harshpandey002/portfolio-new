@@ -10,13 +10,13 @@ Full-stack product engineer with 5+ years of experience building polished web an
 
 ## Experience
 
-### Juice Labs - Full-Stack Developer
+### JuiceXP (formerly Juice Labs) - Full-Stack Developer
 
-Jan 2023 - Present
+Jan 2024 - Present
 
 - Worked across a production fan-engagement and rewards platform for live events, including quests, prizes, affiliate codes, workspace/market flows, venue show-board UX, scheduled notifications, API payloads, and redemption/refund paths.
 - Contributed inside a TypeScript monorepo spanning Next.js server and dashboard apps, mobile/Capacitor surfaces, super-admin tooling, shared core/react packages, CLI utilities, API docs, and product docs.
-- Improved reliability and maintainability around Prisma transactions, tests, observability, Sentry/ClickHouse-backed debugging, and AWS-integrated infrastructure.
+- Improved reliability and maintainability around Prisma transactions, tests, Sentry-backed observability, and AWS-integrated infrastructure.
 - Built client-facing and operator-facing product surfaces for campaigns and live-event workflows, including work connected to large-scale entertainment and festival activations.
 
 ### AppSecure Security - Front-End Developer
@@ -29,7 +29,7 @@ Jan 2022 - Aug 2022
 
 ### Freelance Full-Stack Developer
 
-Jul 2021 - Nov 2022
+Sep 2022 - Dec 2023
 
 - Built client products including BlockTrain, EduCompanion, and Beyond Pinks across education, mentoring, blockchain learning, and product-content workflows.
 - Built BlockTrain as a full-stack blockchain education platform with courses, articles, tutorials, project guides, and Firebase-backed app flows; the platform reached 125k+ visitors in its first 2 months.
@@ -52,7 +52,7 @@ App Store: apps.apple.com/us/app/roost-v2/id6743691245
 
 ### Algo Trading
 
-trading.harshpandey.com
+Private project
 
 - Built a single-tenant options execution desk for Zerodha Kite Connect with live tick streams, candle sync, option-chain selection, risk-based sizing previews, armed limit entries, stop-loss placement, trail-to-breakeven, and square-off flows.
 - Implemented server-side trading safety features including frozen anchor candles, synthetic stop-limit triggers, durable active-trade state, order-update reconciliation, Kite WebSocket fan-out over SSE, structured logging, Sentry, and deployment safeguards.
@@ -64,7 +64,7 @@ trading.harshpandey.com
 
 ## Skills
 
-Frontend: React, Next.js, React Native, Expo, TypeScript, Tailwind CSS, NativeWind, shadcn/ui, Radix UI, Framer Motion
+Frontend: React, Next.js, React Native, Expo, TypeScript, Redux, Tailwind CSS, NativeWind, shadcn/ui, Radix UI, Framer Motion
 
 Backend/Data: Node.js, Express, Prisma, Drizzle, PostgreSQL, SQLite, MongoDB, Firebase, REST APIs, WebSockets, SSE
 
@@ -72,7 +72,7 @@ Product Systems: auth, payments/subscriptions, local-first storage, realtime sta
 
 Web3/Trading: Solidity, Hardhat, ethers.js, thirdweb, wagmi, viem, Kite Connect, wallet flows, contract reads/writes
 
-Tools: Git, GitHub, Vercel, Sentry, AWS, ClickHouse, Figma
+Tools: Git, GitHub, Vercel, Sentry, AWS, Figma
 
 ## Education
 

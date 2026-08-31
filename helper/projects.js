@@ -1,7 +1,7 @@
 export const projects = [
   {
     image: "juice-cover.svg",
-    title: "Juice Labs Platform",
+    title: "JuiceXP Platform",
     skills: [
       "Nextjs",
       "React",
@@ -9,7 +9,6 @@ export const projects = [
       "Prisma",
       "PostgreSQL",
       "Sentry",
-      "ClickHouse",
       "AWS",
       "Capacitor",
       "Vitest",
@@ -19,7 +18,7 @@ export const projects = [
     },
     description: [
       "A production fan-engagement and rewards platform for live events, built inside a TypeScript monorepo spanning a Next.js server, operator dashboard, mobile/Capacitor app, super-admin, shared core/react packages, CLI tooling, API docs, and product docs.",
-      "I worked across workspace and market flows, quest and prize systems, affiliate codes, redemption/refund paths, venue show-board UX, scheduled notifications, API payloads, and production reliability around Prisma transactions, tests, observability, and AWS-backed infrastructure.",
+      "I worked across workspace and market flows, quest and prize systems, affiliate codes, redemption/refund paths, venue show-board UX, scheduled notifications, API payloads, and production reliability around Prisma transactions, tests, Sentry-backed observability, and AWS-backed infrastructure.",
     ],
   },
   {
@@ -81,8 +80,7 @@ export const projects = [
       "Sentry",
     ],
     url: {
-      label: "trading.harshpandey.com",
-      link: "https://trading.harshpandey.com",
+      label: "Private project",
     },
     description: [
       "A single-tenant options execution desk for Zerodha Kite Connect. The product focuses on one-trade-at-a-time execution: live tick streams, authoritative candle sync, option-chain selection, risk-based sizing previews, armed limit entries, protective stop-loss placement, trail-to-breakeven, and ours-only square-off flows.",

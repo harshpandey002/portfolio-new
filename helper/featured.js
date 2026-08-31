@@ -1,7 +1,7 @@
 export const featured = [
   {
     image: "juiceIcon.png",
-    title: "Juice Labs Platform",
+    title: "JuiceXP Platform",
     description:
       "A private org monorepo for a production fan-engagement platform: quests, prizes, workspaces, dashboards, mobile surfaces, shared packages, and backend systems.",
   },
@@ -24,7 +24,6 @@ export const featured = [
     title: "Algo Trading",
     description:
       "A single-tenant options execution desk for Zerodha Kite with live ticks, candle charts, server-side risk sizing, and an order lifecycle engine.",
-    link: "https://trading.harshpandey.com",
   },
   {
     image: "lockwarsIcon.png",

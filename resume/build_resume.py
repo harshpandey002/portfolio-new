@@ -39,13 +39,13 @@ SUMMARY = (
 
 EXPERIENCE = [
     {
-        "company": "Juice Labs",
+        "company": "JuiceXP (formerly Juice Labs)",
         "role": "Full-Stack Developer",
-        "date": "Jan 2023 - Present",
+        "date": "Jan 2024 - Present",
         "bullets": [
             "Worked across a production fan-engagement and rewards platform for live events, including quests, prizes, affiliate codes, workspace/market flows, venue show-board UX, scheduled notifications, API payloads, and redemption/refund paths.",
             "Contributed inside a TypeScript monorepo spanning Next.js server and dashboard apps, mobile/Capacitor surfaces, super-admin tooling, shared core/react packages, CLI utilities, API docs, and product docs.",
-            "Improved reliability around Prisma transactions, tests, Sentry/ClickHouse-backed observability, and AWS-integrated infrastructure.",
+            "Improved reliability around Prisma transactions, tests, Sentry-backed observability, and AWS-integrated infrastructure.",
         ],
     },
     {
@@ -60,7 +60,7 @@ EXPERIENCE = [
     {
         "company": "Freelance",
         "role": "Full-Stack Developer",
-        "date": "Jul 2021 - Nov 2022",
+        "date": "Sep 2022 - Dec 2023",
         "bullets": [
             "Built client products including BlockTrain, EduCompanion, and Beyond Pinks across education, mentoring, blockchain learning, and product-content workflows.",
             "Built BlockTrain as a full-stack blockchain education platform with courses, articles, tutorials, and project guides; reached 125k+ visitors in its first 2 months.",
@@ -89,8 +89,8 @@ PROJECTS = [
     },
     {
         "name": "Algo Trading",
-        "link": "https://trading.harshpandey.com",
-        "meta": "Next.js, TypeScript, Kite Connect, WebSockets, SSE, Sentry",
+        "link": None,
+        "meta": "Private project | Next.js, TypeScript, Kite Connect, WebSockets, SSE, Sentry",
         "bullets": [
             "Built a single-tenant options execution desk with live ticks, candle sync, option-chain selection, risk-based sizing, armed entries, stop-loss, and square-off flows.",
             "Implemented frozen anchor candles, synthetic stop-limit triggers, durable active-trade state, order reconciliation, SSE fan-out, logging, and deployment safeguards.",
@@ -107,11 +107,11 @@ PROJECTS = [
 ]
 
 SKILLS = [
-    ("Frontend", "React, Next.js, React Native, Expo, TypeScript, Tailwind CSS, NativeWind, shadcn/ui, Radix UI"),
+    ("Frontend", "React, Next.js, React Native, Expo, TypeScript, Redux, Tailwind CSS, NativeWind, shadcn/ui, Radix UI"),
     ("Backend/Data", "Node.js, Express, Prisma, Drizzle, PostgreSQL, SQLite, MongoDB, Firebase, REST APIs, WebSockets, SSE"),
     ("Systems", "auth, payments/subscriptions, local-first storage, realtime state, dashboards, exports, push notifications, file uploads"),
     ("Web3/Trading", "Solidity, Hardhat, ethers.js, thirdweb, wagmi, viem, Kite Connect, wallet flows, contract reads/writes"),
-    ("Tools", "Git, GitHub, Vercel, Sentry, AWS, ClickHouse, Figma"),
+    ("Tools", "Git, GitHub, Vercel, Sentry, AWS, Figma"),
 ]
 
 EDUCATION = [
