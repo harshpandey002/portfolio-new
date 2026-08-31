@@ -1,6 +1,6 @@
 export const featured = [
   {
-    image: "juiceIcon.svg",
+    image: "juiceIcon.png",
     title: "Juice Labs Platform",
     description:
       "A private org monorepo for a production fan-engagement platform: quests, prizes, workspaces, dashboards, mobile surfaces, shared packages, and backend systems.",
@@ -33,7 +33,7 @@ export const featured = [
       "A fantasy sports mobile app with lineups, lobbies, wallet flows, realtime chat, and socket-driven matchup state across NBA, NFL, and MLB.",
   },
   {
-    image: "shadcnIcon.svg",
+    image: "shadcnIcon.png",
     title: "shadcn Theme Generator",
     description:
       "A public design-tool project that generates shadcn-compatible light and dark CSS variables from a base color with advanced controls.",
